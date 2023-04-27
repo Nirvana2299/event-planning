@@ -28,21 +28,21 @@ export default function Planning() {
       <div className="flex justify-center pt-16">
         <p className="text-4xl subpixel-antialiased cursive font-cursive">Event Planning</p>
       </div>
-      <div className="flex flex-row py-16 px-4 justify-center flex-wrap gap-y-0.5">
-        <div className='w-auto h-96 object-filled pr-4 pl-4' >
-          <img className='rounded-lg h-80 w-80' src={images[0].url} alt='image1' />
+      <div className="flex flex-row py-16 px-4 justify-center flex-wrap">
+        <div className='w-auto h-96 object-filled pr-6 pl-6' >
+          <img className='rounded-lg h-80 w-80 object-cover' src={images[0].url} alt='image1' />
           <h3 className="flex justify-center mt-2">Ring</h3>
         </div>
-        <div className='w-auto h-96 object-filled pr-4 pl-4' >
-          <img className='rounded-lg h-80 w-80' src={images[1].url} alt='image1' />
+        <div className='w-auto h-96 object-filled pr-6 pl-6' >
+          <img className='rounded-lg h-80 w-80 object-cover' src={images[1].url} alt='image1' />
           <h3 className="flex justify-center mt-2">Engagement</h3>
         </div>
-        <div className='w-auto h-96 object-filled pr-4 pl-4' >
-          <img className='rounded-lg h-80 w-80' src={images[2].url} alt='image1' />
+        <div className='w-auto h-96 object-filled pr-6 pl-6' >
+          <img className='rounded-lg h-80 w-80 object-cover' src={images[2].url} alt='image1' />
           <h3 className="flex justify-center mt-2">Dine</h3>
         </div>
-        <div className='w-auto h-96 object-filled pr-4 pl-4' >
-          <img className='rounded-lg h-80 w-80' src={images[3].url} alt='image1' />
+        <div className='w-auto h-96 object-filled pr-6 pl-6' >
+          <img className='rounded-lg h-80 w-80 object-cover' src={images[3].url} alt='image1' />
           <h3 className="flex justify-center mt-2">isle</h3>
         </div>
       </div>
