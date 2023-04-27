@@ -12,6 +12,9 @@ module.exports = {
       },
       fontFamily: {
         'cursive': ['Dancing Script', 'cursive']
+      },
+      colors: {
+        'bisque': 'ffe4c4'
       }
     },
   },
