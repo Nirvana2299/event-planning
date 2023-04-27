@@ -9,6 +9,9 @@ module.exports = {
         '128': '32rem',
         '132': '44rem',
         '136': '48rem'
+      },
+      fontFamily: {
+        'cursive': ['Dancing Script', 'cursive']
       }
     },
   },
