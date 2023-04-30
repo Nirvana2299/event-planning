@@ -26,7 +26,7 @@ export default function Planning() {
   return (
     <div>
       <div className="flex justify-center pt-16">
-        <p className="text-4xl subpixel-antialiased cursive font-cursive">Event Planning</p>
+        <p className="text-4xl subpixel-antialiased cursive font-bold">Event Planning</p>
       </div>
       <div className="flex flex-row py-16 px-4 justify-center flex-wrap">
         <div className='w-auto h-96 object-filled pr-6 pl-6' >
