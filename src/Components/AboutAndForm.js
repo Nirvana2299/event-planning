@@ -9,7 +9,7 @@ export default function AboutAndForm() {
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg ">
               <h1 className="font cursive text-4xl text-center font-bold tracking-tight text-gray-900 sm:text-6xl sm:text-left subpixel-antialiased">
-                Summer styles are finally here
+                About Us
               </h1>
               <p className="mt-2 cursive text-4xl text-center font-bold tracking-tight text-gray-900 sm:text-4xl sm:text-left subpixel-antialiased">A better workflow</p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
