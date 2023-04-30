@@ -43,10 +43,10 @@ export default function Carousel() {
   };
 
   return (
-    <div className='max-w-fit m-auto relative group backdrop-blur-sm bg-white/30 left-0 right-0' >
+    <div className='max-w-fit m-auto relative group bg-white/30 left-0 right-0' >
     <div className="carousel">
     <div>
-      <img className='image h-132 w-screen object-cover'  src={images[currentIndex].url} alt={`${currentIndex}`} />
+      <img className='image h-80 w-screen sm:h-132 object-cover'  src={images[currentIndex].url} alt={`${currentIndex}`} />
       </div>
       <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
         <button onClick={previousImage}>Previous</button>
