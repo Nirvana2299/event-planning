@@ -25,9 +25,6 @@ export default function TieupProperties() {
 
   return (
     <div>
-      <div className="pr-20 pl-20">
-        <hr className="border-black"></hr>
-      </div>
       <div className="flex justify-center pt-16">
         <p className="text-4xl subpixel-antialiased cursive font-bold">Our Tieup Properties</p>
       </div>
@@ -48,9 +45,6 @@ export default function TieupProperties() {
           <img className='rounded-lg h-80 w-80 object-cover' src={images[3].url} alt='image1' />
           <h3 className="flex justify-center mt-2">BentonVille</h3>
         </div>
-      </div>
-      <div className="pr-20 pl-20">
-        <hr className="border-black"></hr>
       </div>
     </div>
   )
