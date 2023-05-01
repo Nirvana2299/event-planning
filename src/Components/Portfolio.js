@@ -6,21 +6,21 @@ const callouts = [
   {
     name: 'Desk and Office',
     description: 'Work from home accessories',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg',
+    imageSrc: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
     href: '#',
   },
   {
     name: 'Self-Improvement',
     description: 'Journals and note-taking',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
+    imageSrc: 'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
     imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
     href: '#',
   },
   {
     name: 'Travel',
     description: 'Daily commute essentials',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
+    imageSrc: 'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
     imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
     href: '#',
   },
@@ -47,7 +47,7 @@ export default function Portfolio() {
       <div className="bg-besque-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-            <h2 className="text-3xl cursive font-bold text-gray-900">Portfolio</h2>
+            <h2 className="text-3xl cursive font-bold text-bisque-900">Portfolio</h2>
 
             <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
               {callouts.map((callout) => (
@@ -59,13 +59,13 @@ export default function Portfolio() {
                       className="h-full w-full object-cover object-center"
                     />
                   </div>
-                  <h3 className="mt-6 text-sm text-gray-500">
+                  <h3 className="mt-6 text-sm text-bisque-500">
                     <a>
                       <span className="absolute inset-0" />
                       {callout.name}
                     </a>
                   </h3>
-                  <p className="text-base font-semibold text-gray-900">{callout.description}</p>
+                  <p className="text-base font-semibold text-bisque-900">{callout.description}</p>
                 </div>
               ))}
             </div>
