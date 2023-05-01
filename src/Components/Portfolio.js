@@ -102,10 +102,10 @@ export default function Portfolio() {
                 >
                 {/* Popedout Menu */}
                   <Dialog.Panel className="flex w-full transform text-left text-base transition md:my-8 md:max-w-2xl md:px-4 lg:max-w-4xl">
-                    <div className="relative flex w-full items-center overflow-hidden bg-bisque-100 px-4 pb-8 pt-14 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
+                    <div className="relative flex w-full items-center overflow-hidden bg-bisque-100 px-4 pb-8 pt-14 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8 rounded-lg">
                       <button
                         type="button"
-                        className="absolute right-4 top-4 text-gray-400 hover:text-gray-500 sm:right-6 sm:top-8 md:right-6 md:top-6 lg:right-8 lg:top-8"
+                        className="absolute right-4 top-4 text-bisque-600 hover:text-bisque-900 sm:right-6 sm:top-8 md:right-6 md:top-6 lg:right-8 lg:top-8"
                         onClick={() => setOpen(false)}
                       >
                         <span className="sr-only">Close</span>
@@ -121,8 +121,8 @@ export default function Portfolio() {
                           />
                         </div>
                         <div className="sm:col-span-2 lg:col-span-2">
-                          <h3 className="text-lg leading-6 font-medium text-gray-900">{selectedCallout.name}</h3>
-                          <p className="mt-4 text-sm text-gray-500">{selectedCallout.description}</p>
+                          <h3 className="text-lg leading-6 font-medium text-bisque-900">{selectedCallout.name}</h3>
+                          <p className="mt-4 text-sm text-bisque-500">{selectedCallout.description}</p>
                         </div>
                       </div>
                     </div>
