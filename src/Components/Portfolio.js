@@ -47,7 +47,7 @@ export default function Portfolio() {
       <div className="bg-besque-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
-            <h2 className="text-2xl font-bold text-gray-900">Collections</h2>
+            <h2 className="text-3xl cursive font-bold text-gray-900">Portfolio</h2>
 
             <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
               {callouts.map((callout) => (
@@ -75,6 +75,7 @@ export default function Portfolio() {
       {/*PopUp section*/}
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={() => setOpen(false)}>
+        {/* Popup Animation  */}
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -84,7 +85,7 @@ export default function Portfolio() {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 hidden bg-gray-500 bg-opacity-75 transition-opacity md:block" />
+            <div className="fixed inset-0 hidden bg-bisque-600 bg-opacity-75 transition-opacity md:block" />
           </Transition.Child>
 
           <div className="fixed inset-0 z-10 overflow-y-auto">
@@ -99,8 +100,9 @@ export default function Portfolio() {
                   leaveFrom="opacity-100 translate-y-0 md:scale-100"
                   leaveTo="opacity-0 translate-y-4 md:translate-y-0 md:scale-95"
                 >
+                {/* Popedout Menu */}
                   <Dialog.Panel className="flex w-full transform text-left text-base transition md:my-8 md:max-w-2xl md:px-4 lg:max-w-4xl">
-                    <div className="relative flex w-full items-center overflow-hidden bg-white px-4 pb-8 pt-14 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
+                    <div className="relative flex w-full items-center overflow-hidden bg-bisque-100 px-4 pb-8 pt-14 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
                       <button
                         type="button"
                         className="absolute right-4 top-4 text-gray-400 hover:text-gray-500 sm:right-6 sm:top-8 md:right-6 md:top-6 lg:right-8 lg:top-8"
