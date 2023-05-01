@@ -10,6 +10,11 @@ module.exports = {
         '132': '44rem',
         '136': '48rem'
       },
+      width: {
+        '128': '32rem',
+        '132': '44rem',
+        '136': '48rem'
+      },
       fontFamily: {
         'cursive': ['Dancing Script', 'cursive']
       },
