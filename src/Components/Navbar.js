@@ -37,9 +37,10 @@ export default function Navbar() {
     <header className="bg-bisque backdrop-blur-3xl bg-bisque-100/80">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="#" className="-m-1.5 p-1.5 flex flex-row justify-center">
             <span className="sr-only">Your Company</span>
-            <img className="h-10 w-auto" src={domino} alt="" />
+            <img className="h-10 w-auto text-bisque-600" src={domino} alt="" />
+            <h1 className='pl-2 pt-1.5 cursive font-bold text-xl'>Night Heaven</h1>
           </a>
         </div>
         <div className="flex lg:hidden">
