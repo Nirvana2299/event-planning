@@ -39,7 +39,7 @@ export default function Navbar() {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img className="h-8 w-auto" src={domino} alt="" />
+            <img className="h-10 w-auto" src={domino} alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -54,7 +54,7 @@ export default function Navbar() {
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-bisque-900">
+            <Popover.Button className="flex items-center gap-x-1 text-md font-semibold leading-6 text-bisque-900">
               Services
               <ChevronDownIcon className="h-5 w-5 flex-none text-bisque-400" aria-hidden="true" />
             </Popover.Button>
@@ -104,16 +104,16 @@ export default function Navbar() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-bisque-900">
+          <a href="#" className="text-md font-semibold leading-6 text-bisque-900">
             Home
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-bisque-900">
+          <a href="#" className="text-md font-semibold leading-6 text-bisque-900">
             About Us
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-bisque-900">
+          <a href="#" className="text-md font-semibold leading-6 text-bisque-900">
             Services
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-bisque-900">
+          <a href="#" className="text-md font-semibold leading-6 text-bisque-900">
             Portfolio
           </a>
         </Popover.Group>
