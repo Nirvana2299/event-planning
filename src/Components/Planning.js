@@ -26,24 +26,24 @@ export default function Planning() {
   return (
     <div>
       <div className="flex justify-center pt-16">
-        <p className="sm:text-4xl text-5xl subpixel-antialiased cursive font-bold">Event Planning</p>
+        <p className="sm:text-4xl text-5xl text-bisque-900 subpixel-antialiased cursive font-bold">Event Planning</p>
       </div>
       <div className="flex flex-row py-16 px-1 sm:px-4 justify-center flex-wrap">
         <div className='w-auto h-52 sm:h-96 object-filled pr-2 pl-2 md:pr-6 pl-6 transition ease-in-out delay-150 bg-bisque-100 hover:-translate-y-1 hover:scale-110 hover:bg-transparent duration-300' >
           <img className='rounded-lg h-40 w-40 sm:h-80 sm:w-80 object-cover ' src={images[0].url} alt='image1' />
-          <h3 className="flex justify-center mt-2 text-xl">Ring</h3>
+          <h3 className="flex justify-center mt-2 text-xl text-bisque-600 leading-8">Ring</h3>
         </div>
         <div className='w-auto h-52 sm:h-96 object-filled pr-2 pl-2 md:pr-6 pl-6 transition ease-in-out delay-150 bg-bisque-100 hover:-translate-y-1 hover:scale-110 hover:bg-transparent duration-300' >
           <img className='rounded-lg h-40 w-40 sm:h-80 sm:w-80 object-cover ' src={images[1].url} alt='image1' />
-          <h3 className="flex justify-center mt-2 text-xl">Engagement</h3>
+          <h3 className="flex justify-center mt-2 text-xl text-bisque-600 leading-8">Engagement</h3>
         </div>
         <div className='w-auto h-52 sm:h-96 object-filled pr-2 pl-2 md:pr-6 pl-6 transition ease-in-out delay-150 bg-bisque-100 hover:-translate-y-1 hover:scale-110 hover:bg-transparent duration-300' >
           <img className='rounded-lg h-40 w-40 sm:h-80 sm:w-80 object-cover ' src={images[2].url} alt='image1' />
-          <h3 className="flex justify-center mt-2 text-xl">Dine</h3>
+          <h3 className="flex justify-center mt-2 text-xl text-bisque-600 leading-8">Dine</h3>
         </div>
         <div className='w-auto h-52 sm:h-96 object-filled pr-2 pl-2 md:pr-6 pl-6 transition ease-in-out delay-150 bg-bisque-100 hover:-translate-y-1 hover:scale-110 hover:bg-transparent duration-300' >
           <img className='rounded-lg h-40 w-40 sm:h-80 sm:w-80 object-cover ' src={images[3].url} alt='image1' />
-          <h3 className="flex justify-center mt-2 text-xl">isle</h3>
+          <h3 className="flex justify-center mt-2 text-xl text-bisque-600 leading-8">Isle</h3>
         </div>
       </div>
     </div>
