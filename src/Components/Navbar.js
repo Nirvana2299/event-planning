@@ -21,10 +21,10 @@ const products = [
   { name: 'Cultural Event', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
   { name: 'Annual Function', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon }
 ]
-const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
+// const callsToAction = [
+//   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
+//   { name: 'Contact sales', href: '#', icon: PhoneIcon },
+// ]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -34,13 +34,12 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-bisque backdrop-blur-3xl bg-bisque-100/80">
+    <header className="bg-bisque backdrop-blur-3xl bg-bisque-100/80 left-0 right-0 top-0">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <span className="cursive font-bold text-xl">Night Heaven</span>
             <img className="h-8 w-auto text-bisque-600" src={domino} alt="" />
-            {/* <h1 className='pl-2 pt-1.5 cursive font-bold text-xl'>Night Heaven</h1> */}
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -89,7 +88,7 @@ export default function Navbar() {
                     </div>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                {/* <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
                   {callsToAction.map((item) => (
                     <a
                       key={item.name}
@@ -100,7 +99,7 @@ export default function Navbar() {
                       {item.name}
                     </a>
                   ))}
-                </div>
+                </div> */}
               </Popover.Panel>
             </Transition>
           </Popover>
@@ -119,7 +118,7 @@ export default function Navbar() {
           </a>
         </Popover.Group>
       </nav>
-      <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+      <Dialog as="div" className="lg:hidden transition ease-in-out duration-200" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-bisque backdrop-blur-3xl bg-bisque-100/30 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
@@ -154,7 +153,7 @@ export default function Navbar() {
                         />
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...products, ...callsToAction].map((item) => (
+                        {[...products].map((item) => (
                           <Disclosure.Button
                             key={item.name}
                             as="a"
