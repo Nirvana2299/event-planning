@@ -6,6 +6,7 @@ import Ring from './pages/Ring';
 import Isle from './pages/Isle';
 import Dine from './pages/Dine';
 import Engagement from './pages/Engagement';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/isle' element={<Isle />} />
           <Route path='/dine' element={<Dine />} />
         </Routes>
+        <Footer />
       </>
     </BrowserRouter>
   );
