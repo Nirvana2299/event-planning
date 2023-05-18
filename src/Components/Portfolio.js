@@ -71,24 +71,12 @@ export default function Portfolio() {
               {callouts.map((callout) => (
                 <div key={callout.name} className="group relative" onClick={() => switchOn(callout)}>
                   <div className="relative h-80 w-full overflow-hidden rounded-lg bg-bisque-100 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
-                    <Transition
-                      show={selectedCallout === callout}
-                      enter="transition-opacity duration-1000"
-                      enterFrom="opacity-0"
-                      enterTo="opacity-100"
-                      leave="transition-opacity duration-1000"
-                      leaveFrom="opacity-100"
-                      leaveTo="opacity-0"
-                      className="absolute inset-0"
-                    >
-                      {() => (
+                {/* image array, Loops through all the image provided in the callouts variable */}
                         <img
                           src={callout.imageSrc.image[currentIndex]}
                           alt={callout.imageAlt}
                           className="h-full w-full object-cover object-center"
                         />
-                      )}
-                    </Transition>
                   </div>
                   <h3 className="mt-6 text-sm text-bisque-500">
                     <a>
