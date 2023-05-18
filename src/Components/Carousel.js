@@ -53,7 +53,7 @@ export default function Carousel() {
   }
 
   return (
-    <div className='max-w-fit m-auto pt-20 sm:pt-20 relative group left-0 right-0' >
+    <div className='max-w-fit m-auto pt-28 sm:pt-28 relative group left-0 right-0' >
     <div className="carousel">
     <div>
       <img className='image h-80 w-screen sm:h-132 object-cover'  src={images[currentIndex].url} alt={`${currentIndex}`} />
