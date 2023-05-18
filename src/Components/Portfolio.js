@@ -1,6 +1,8 @@
 import { Fragment, useState, useEffect } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline'
+import { useSwipeable } from 'react-swipeable';
+import { IoArrowBackCircleSharp, IoArrowForwardCircleSharp } from 'react-icons/io5';
 
 const imgURL1 =
   'https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80';
@@ -51,7 +53,7 @@ export default function Portfolio() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((currentIndex + 1) % callouts.length);
-    }, 4000);
+    }, 7000);
     return () => clearInterval(intervalId);
   }, [currentIndex]);
 
@@ -61,22 +63,37 @@ export default function Portfolio() {
     setCurrentIndex(0);
   }
 
+  const nextImage = () => {
+    setCurrentIndex((currentIndex + 1) % callouts.length);
+  };
+
+  const previousImage = () => {
+    setCurrentIndex(currentIndex === 0 ? callouts.length - 1 : currentIndex - 1);
+  };
+
+  const handlers = useSwipeable({
+    onSwipedLeft: nextImage,
+    onSwipedRight: previousImage,
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true
+  });
+
   return (
     <div id="portfolioSection">
       <div className="bg-bisque-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-8 sm:py-24 lg:max-w-none lg:py-32">
             <h2 className="text-3xl cursive font-bold text-bisque-900">Portfolio</h2>
-            <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+            <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0" {...handlers}>
               {callouts.map((callout) => (
-                <div key={callout.name} className="group relative" onClick={() => switchOn(callout)}>
-                  <div className="relative h-80 w-full overflow-hidden rounded-lg bg-bisque-100 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
-                {/* image array, Loops through all the image provided in the callouts variable */}
-                        <img
-                          src={callout.imageSrc.image[currentIndex]}
-                          alt={callout.imageAlt}
-                          className="h-full w-full object-cover object-center"
-                        />
+                <div key={callout.name} className="group relative" onClick={() => switchOn(callout)} >
+                  <div className="relative h-80 w-full overflow-hidden rounded-lg bg-bisque-100 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64" >
+                    {/* image array, Loops through all the image provided in the callouts variable */}
+                    <img
+                      src={callout.imageSrc.image[currentIndex]}
+                      alt={callout.imageAlt}
+                      className="h-full w-full object-cover object-center"
+                    />
                   </div>
                   <h3 className="mt-6 text-sm text-bisque-500">
                     <a>
