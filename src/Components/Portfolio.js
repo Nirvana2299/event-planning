@@ -81,9 +81,8 @@ export default function Portfolio() {
                       leaveTo="opacity-0"
                       className="absolute inset-0"
                     >
-                      {(ref) => (
+                      {() => (
                         <img
-                          ref={ref}
                           src={callout.imageSrc.image[currentIndex]}
                           alt={callout.imageAlt}
                           className="h-full w-full object-cover object-center"
