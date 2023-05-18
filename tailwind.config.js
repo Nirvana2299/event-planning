@@ -36,7 +36,8 @@ module.exports = {
         },
         'gentlecare': {
           100: '#ffc3a0',
-          200: '#ffafbd'
+          200: '#ffafbd',
+          300: '#C9AD93'
         }
       },
       screens: {
