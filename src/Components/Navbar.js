@@ -108,13 +108,13 @@ export default function Navbar() {
           <Link to='/' className="text-md font-semibold leading-6 text-bisque-900">
             Home
           </Link>
-          <a href="#" className="text-md font-semibold leading-6 text-bisque-900">
+          <a href="#aboutUsSection" className="text-md font-semibold leading-6 text-bisque-900">
             About Us
           </a>
           <a href="#" className="text-md font-semibold leading-6 text-bisque-900">
             Services
           </a>
-          <a href="#" className="text-md font-semibold leading-6 text-bisque-900">
+          <a href="#portfolioSection" className="text-md font-semibold leading-6 text-bisque-900">
             Portfolio
           </a>
         </Popover.Group>
@@ -175,7 +175,7 @@ export default function Navbar() {
                   Home
                   </Link>
                 <a
-                  href="#"
+                  href="#aboutUsSection"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-bisque-900 hover:bg-gray-50"
                 >
                   About Us
@@ -187,7 +187,7 @@ export default function Navbar() {
                   Services
                 </a>
                 <a
-                  href="#"
+                  href="#portfolioSection"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-bisque-900 hover:bg-gray-50"
                 >
                   Portfolio
