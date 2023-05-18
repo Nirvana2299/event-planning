@@ -69,15 +69,15 @@ export default function Navbar() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-xl backdrop-blur-3xl bg-bisque-100/90 shadow-lg ring-1 ring-bisque-900/5">
+              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-xl backdrop-blur-3xl bg-bisque-100 shadow-lg ring-1 ring-bisque-900/5">
                 <div className="p-4">
                   {products.map((item) => (
                     <div
                       key={item.name}
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon className="h-6 w-6 text-bisque-600 group-hover:text-indigo-600" aria-hidden="true" />
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-bisque-100">
+                        <item.icon className="h-6 w-6 text-bisque-600 group-hover:text-bisque-600" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
                         <a href={item.href} className="block font-semibold text-bisque-900">
@@ -121,7 +121,7 @@ export default function Navbar() {
       </nav>
       <Dialog as="div" className="lg:hidden transition ease-in-out duration-200" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-bisque backdrop-blur-3xl bg-bisque-100/30 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto backdrop-blur-3xl bg-bisque-100/30 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
