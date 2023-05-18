@@ -1,4 +1,3 @@
-import Navbar from '../Components/Navbar'
 import Carousel from '../Components/Carousel';
 import Planning from '../Components/Planning';
 import TieupProperties from '../Components/TieupProperties';
