@@ -41,9 +41,7 @@ export default function Portfolio() {
 
 
   return (
-    <div >
-      {/* <button onClick={switchOn}>Button</button> */}
-      {/*What to show*/}
+    <div id='portfolioSection'>
       <div className="bg-bisque-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-8 sm:py-24 lg:max-w-none lg:py-32">
