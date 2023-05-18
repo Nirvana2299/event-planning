@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { MdArrowForwardIos, MdArrowBackIos } from 'react-icons/md';
 import { IoArrowBackCircleSharp, IoArrowForwardCircleSharp } from 'react-icons/io5';
 import { useSwipeable } from 'react-swipeable';
+import { Transition } from '@headlessui/react'
 
 export default function Carousel() {
   const images = [
@@ -50,6 +51,7 @@ export default function Carousel() {
     preventDefaultTouchmoveEvent: true,
     trackMouse: true
   });
+  
 
   return (
     <div className='max-w-fit m-auto pt-28 sm:pt-28 relative group left-0 right-0' {...handlers}>
