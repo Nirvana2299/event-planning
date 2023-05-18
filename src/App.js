@@ -1,27 +1,26 @@
 import './styles.css'
-import Navbar from './Components/Navbar'
-import Carousel from './Components/Carousel';
-import Planning from './Components/Planning';
-import TieupProperties from './Components/TieupProperties';
-import AboutAndForm from './Components/AboutAndForm';
-import Line from './Components/Line';
-import Portfolio from './Components/Portfolio';
-
+import Home from './pages/Home';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Navbar from './Components/Navbar';
+import Ring from './pages/Ring';
+import Isle from './pages/Isle';
+import Dine from './pages/Dine';
+import Engagement from './pages/Engagement';
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Carousel />
-      <Planning />
-      <Line />
-      <TieupProperties />
-      <Line />
-      <AboutAndForm />
-      <Line />
-      <Portfolio />
-      <Line />
-    </div>
+    <BrowserRouter>
+      <>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/ring' element={<Ring />} />
+          <Route path='/engagement' element={<Engagement />} />
+          <Route path='/isle' element={<Isle />} />
+          <Route path='/dine' element={<Dine />} />
+        </Routes>
+      </>
+    </BrowserRouter>
   );
 }
 
