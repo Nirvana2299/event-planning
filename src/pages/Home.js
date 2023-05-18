@@ -16,7 +16,6 @@ export default function Home() {
         <AboutAndForm />
         <Line />
         <Portfolio />
-        <Line />
       </div>
     );
   }
