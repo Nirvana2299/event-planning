@@ -1,4 +1,5 @@
 import domino from './../image/domino-mask-svgrepo-com.svg'
+import { Link } from 'react-router-dom'
 import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
@@ -104,9 +105,9 @@ export default function Navbar() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-md font-semibold leading-6 text-bisque-900">
+          <Link to='/' className="text-md font-semibold leading-6 text-bisque-900">
             Home
-          </a>
+          </Link>
           <a href="#" className="text-md font-semibold leading-6 text-bisque-900">
             About Us
           </a>
@@ -167,6 +168,12 @@ export default function Navbar() {
                     </>
                   )}
                 </Disclosure>
+                <Link
+                  to='/'
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-bisque-900 hover:bg-gray-50"
+                >
+                  Home
+                  </Link>
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-bisque-900 hover:bg-gray-50"
