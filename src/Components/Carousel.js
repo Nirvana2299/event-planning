@@ -54,10 +54,10 @@ export default function Carousel() {
   
 
   return (
-    <div className='max-w-fit m-auto pt-28 sm:pt-28 relative group left-0 right-0' {...handlers}>
+    <div id='slideSection' className='max-w-fit m-auto pt-[6.80rem] sm:pt-28 relative group left-0 right-0' {...handlers}>
       <div className="carousel">
         <div>
-          <img className='image h-80 w-screen sm:h-132 object-cover' src={images[currentIndex].url} alt={`${currentIndex}`} />
+          <img className='image h-80 w-screen sm:h-128 object-cover' src={images[currentIndex].url} alt={`${currentIndex}`} />
         </div>
         <div className='hidden md:group-hover:block absolute sm:top-[55%] top-[62%] -translate-x-0 translate-y-[-50%] rounded-full left-5 text-4xl sm:text-4xl md:text-6xl backdrop-blur bg-white-100/20 text-bisque-100 cursor-pointer'>
           <IoArrowBackCircleSharp onClick={previousImage}></IoArrowBackCircleSharp>
