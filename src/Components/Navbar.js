@@ -36,7 +36,7 @@ export default function Navbar() {
 
   return (
     <header className="bg-bisque backdrop-blur-3xl bg-bisque-100/80 left-0 right-0 top-0">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-2" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="cursive font-bold text-xl">Night Heaven</span>
@@ -54,11 +54,27 @@ export default function Navbar() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
+
+          <Link to='/' className="text-md font-semibold leading-6 text-bisque-900 hover:text-white">
+            Home
+          </Link>
+          <a href="#aboutUsSection" className="text-md font-semibold leading-6 text-bisque-900">
+            About Us
+          </a>
+          {/* <a href="#eventSection" className="text-md font-semibold leading-6 text-bisque-900">
+            Services
+          </a> */}
+
+          {/* ////////////////////////////////////////////////////////////////////////////////////////////// Services popup panel ///////////////////////////////////////////////////////////////////////////////////////////////////// */}
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-md font-semibold leading-6 text-bisque-900">
-              Services
-              <ChevronDownIcon className="h-5 w-5 flex-none text-bisque-400" aria-hidden="true" />
-            </Popover.Button>
+            <a href="#eventSection">
+              <Popover.Button className="flex items-center gap-x-1 text-md font-semibold leading-6 text-bisque-900">
+
+                Services
+
+                <ChevronDownIcon className="h-5 w-5 flex-none text-bisque-400" aria-hidden="true" />
+              </Popover.Button>
+            </a>
 
             <Transition
               as={Fragment}
@@ -105,23 +121,18 @@ export default function Navbar() {
             </Transition>
           </Popover>
 
-          <Link to='/' className="text-md font-semibold leading-6 text-bisque-900">
-            Home
-          </Link>
-          <a href="#aboutUsSection" className="text-md font-semibold leading-6 text-bisque-900">
-            About Us
-          </a>
-          <a href="#" className="text-md font-semibold leading-6 text-bisque-900">
-            Services
-          </a>
           <a href="#portfolioSection" className="text-md font-semibold leading-6 text-bisque-900">
             Portfolio
           </a>
         </Popover.Group>
       </nav>
+
+
       <Dialog as="div" className="lg:hidden transition ease-in-out duration-200" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto backdrop-blur-3xl bg-bisque-100/30 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+
+
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto backdrop-blur-3xl bg-bisque-100/60 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
@@ -143,11 +154,31 @@ export default function Navbar() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
+
+                <Link
+                  to='/'
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-bisque-900 hover:bg-gray-50"
+                >
+                  Home
+                </Link>
+                <a
+                  href="#aboutUsSection"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-bisque-900 hover:bg-gray-50"
+                >
+                  About Us
+                </a>
+                {/* <a
+                  href="#"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-bisque-900 hover:bg-gray-50"
+                >
+                  Services
+                </a> */}
+
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50">
-                        Product
+                        Services
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
                           aria-hidden="true"
@@ -168,24 +199,7 @@ export default function Navbar() {
                     </>
                   )}
                 </Disclosure>
-                <Link
-                  to='/'
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-bisque-900 hover:bg-gray-50"
-                >
-                  Home
-                  </Link>
-                <a
-                  href="#aboutUsSection"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-bisque-900 hover:bg-gray-50"
-                >
-                  About Us
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-bisque-900 hover:bg-gray-50"
-                >
-                  Services
-                </a>
+
                 <a
                   href="#portfolioSection"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-bisque-900 hover:bg-gray-50"
