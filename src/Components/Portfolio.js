@@ -53,7 +53,7 @@ export default function Portfolio() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((currentIndex + 1) % callouts.length);
-    }, 7000);
+    }, 5000);
     return () => clearInterval(intervalId);
   }, [currentIndex]);
 
@@ -138,7 +138,7 @@ export default function Portfolio() {
                 >
                   {/* Popedout Menu */}
                   <Dialog.Panel className="flex w-full transform text-left text-base transition md:my-8 md:max-w-2xl md:px-4 lg:max-w-4xl">
-                    <div className="relative flex w-full items-center overflow-hidden bg-bisque-100 px-4 pb-8 pt-14 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8 rounded-lg">
+                    <div className="relative flex w-full items-center overflow-hidden backdrop-blur-3xl bg-bisque-100/80 px-4 pb-8 pt-14 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8 rounded-lg">
                       <button
                         type="button"
                         className="absolute right-4 top-4 text-bisque-600 hover:text-bisque-900 sm:right-6 sm:top-8 md:right-6 md:top-6 lg:right-8 lg:top-8"
