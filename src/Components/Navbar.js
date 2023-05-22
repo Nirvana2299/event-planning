@@ -14,13 +14,13 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
-const products = [
-  { name: 'Birthday Party', description: 'Get a better understanding of your traffic', href: '#', icon: CakeIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Anniversary', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Baby Shower', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Cultural Event', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-  { name: 'Annual Function', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon }
+const services = [
+  { name: 'Birthday Party', description: 'Get a better understanding of your traffic', to: '/birthdayParty', icon: CakeIcon },
+  { name: 'Engagement', description: 'Speak directly to your customers', to: '/engagement', icon: CursorArrowRaysIcon },
+  { name: 'Anniversary', description: 'Your customers’ data will be safe and secure', to: '/anniversary', icon: FingerPrintIcon },
+  { name: 'Baby Shower', description: 'Connect with third-party tools', to: '/babyShower', icon: SquaresPlusIcon },
+  { name: 'Cultural Event', description: 'Build strategic funnels that will convert', to: '/culturalEvent', icon: ArrowPathIcon },
+  { name: 'Annual Function', description: 'Build strategic funnels that will convert', to: '/annualFunction', icon: ArrowPathIcon }
 ]
 // const callsToAction = [
 //   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
@@ -66,15 +66,16 @@ export default function Navbar() {
           </a> */}
 
           {/* ////////////////////////////////////////////////////////////////////////////////////////////// Services popup panel ///////////////////////////////////////////////////////////////////////////////////////////////////// */}
+          <a href="#eventSection">
           <Popover className="relative">
-            <a href="#eventSection">
+          
               <Popover.Button className="flex items-center gap-x-1 text-md font-semibold leading-6 text-bisque-900">
 
                 Services
 
                 <ChevronDownIcon className="h-5 w-5 flex-none text-bisque-400" aria-hidden="true" />
               </Popover.Button>
-            </a>
+           
 
             <Transition
               as={Fragment}
@@ -87,7 +88,7 @@ export default function Navbar() {
             >
               <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-xl backdrop-blur-3xl bg-bisque-100 shadow-lg ring-1 ring-bisque-900/5">
                 <div className="p-4">
-                  {products.map((item) => (
+                  {services.map((item) => (
                     <div
                       key={item.name}
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
@@ -96,7 +97,7 @@ export default function Navbar() {
                         <item.icon className="h-6 w-6 text-bisque-600 group-hover:text-bisque-600" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
-                        <a href={item.href} className="block font-semibold text-bisque-900">
+                        <a href={item.to} className="block font-semibold text-bisque-900">
                           {item.name}
                           <span className="absolute inset-0" />
                         </a>
@@ -105,21 +106,10 @@ export default function Navbar() {
                     </div>
                   ))}
                 </div>
-                {/* <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                  {callsToAction.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-bisque-900 hover:bg-gray-100"
-                    >
-                      <item.icon className="h-5 w-5 flex-none text-bisque-400" aria-hidden="true" />
-                      {item.name}
-                    </a>
-                  ))}
-                </div> */}
               </Popover.Panel>
             </Transition>
           </Popover>
+          </a>
 
           <a href="#portfolioSection" className="text-md font-semibold leading-6 text-bisque-900">
             Portfolio
@@ -185,11 +175,11 @@ export default function Navbar() {
                         />
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...products].map((item) => (
+                        {[...services].map((item) => (
                           <Disclosure.Button
                             key={item.name}
                             as="a"
-                            href={item.href}
+                            href={item.to}
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-bisque-900 hover:bg-gray-50"
                           >
                             {item.name}
