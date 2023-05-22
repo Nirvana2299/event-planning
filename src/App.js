@@ -7,6 +7,12 @@ import Isle from './pages/Isle';
 import Dine from './pages/Dine';
 import Engagement from './pages/Engagement';
 import Footer from './Components/Footer';
+import Anniversary from './services/Anniversary';
+import AnnualFunction from './services/AnnualFunction';
+import BabyShower from './services/BabyShower';
+import BirthdayParty from './services/BirthdayParty';
+import CulturalEvent from './services/CulturalEvent';
+import EngagementServices from './services/EngagementServices';
 
 function App() {
   return (
@@ -19,6 +25,12 @@ function App() {
           <Route path='/engagement' element={<Engagement />} />
           <Route path='/isle' element={<Isle />} />
           <Route path='/dine' element={<Dine />} />
+          <Route path='/anniversary' element={<Anniversary/>} />
+          <Route path='/annualFunction' element={<AnnualFunction/>} />
+          <Route path='/babyShower' element={<BabyShower/>} />
+          <Route path='/birthdayParty' element={<BirthdayParty/>} />
+          <Route path='/culturalEvent' element={<CulturalEvent/>} />
+          <Route path='/engagement' element={<EngagementServices/>} />
         </Routes>
         <Footer />
       </>
