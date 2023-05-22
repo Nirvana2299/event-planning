@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { MdArrowForwardIos, MdArrowBackIos } from 'react-icons/md';
 import { IoArrowBackCircleSharp, IoArrowForwardCircleSharp } from 'react-icons/io5';
 import { useSwipeable } from 'react-swipeable';
 import { Transition } from '@headlessui/react'
