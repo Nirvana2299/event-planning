@@ -15,12 +15,12 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const services = [
-  { name: 'Birthday Party', description: 'Get a better understanding of your traffic', to: '/birthday-party', icon: CakeIcon },
+  { name: 'Birthday Party', description: 'Get a better understanding of your traffic', to:'/birthday-party', icon: CakeIcon },
   { name: 'Engagement', description: 'Speak directly to your customers', to: '/engagement', icon: CursorArrowRaysIcon },
-  { name: 'Anniversary', description: 'Your customers’ data will be safe and secure', to: '/anniversary', icon: FingerPrintIcon },
+  { name: 'Anniversary', description: 'Your customers’ data will be safe and secure', to:'/anniversary', icon: FingerPrintIcon },
   { name: 'Baby Shower', description: 'Connect with third-party tools', to: '/baby-shower', icon: SquaresPlusIcon },
-  { name: 'Cultural Event', description: 'Build strategic funnels that will convert', to: '/cultural-event', icon: ArrowPathIcon },
-  { name: 'Annual Function', description: 'Build strategic funnels that will convert', to: '/annual-function', icon: ArrowPathIcon }
+  { name: 'Cultural Event', description: 'Build strategic funnels that will convert', to:'/cultural-event', icon: ArrowPathIcon },
+  { name: 'Annual Function', description: 'Build strategic funnels that will convert', to:'/annual-function', icon: ArrowPathIcon }
 ]
 // const callsToAction = [
 //   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
@@ -66,7 +66,6 @@ export default function Navbar() {
           </a> */}
 
           {/* ////////////////////////////////////////////////////////////////////////////////////////////// Services popup panel ///////////////////////////////////////////////////////////////////////////////////////////////////// */}
-          <a href="#eventSection">
           <Popover className="relative">
           
               <Popover.Button className="flex items-center gap-x-1 text-md font-semibold leading-6 text-bisque-900">
@@ -109,7 +108,7 @@ export default function Navbar() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          </a>
+      
 
           <a href="#portfolioSection" className="text-md font-semibold leading-6 text-bisque-900">
             Portfolio
