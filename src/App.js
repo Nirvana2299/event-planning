@@ -25,12 +25,12 @@ function App() {
           <Route path='/engagement' element={<Engagement />} />
           <Route path='/isle' element={<Isle />} />
           <Route path='/dine' element={<Dine />} />
-          <Route path='/anniversary' element={<Anniversary/>} />
-          <Route path='/annualFunction' element={<AnnualFunction/>} />
-          <Route path='/babyShower' element={<BabyShower/>} />
-          <Route path='/birthdayParty' element={<BirthdayParty/>} />
-          <Route path='/culturalEvent' element={<CulturalEvent/>} />
-          <Route path='/engagement' element={<EngagementServices/>} />
+          <Route path='/anniversary' element={<Anniversary />} />
+          <Route path='/annual-function' element={<AnnualFunction />} />
+          <Route path='/baby-shower' element={<BabyShower />} />
+          <Route path='/birthday-party' element={<BirthdayParty />} />
+          <Route path='/cultural-event' element={<CulturalEvent />} />
+          <Route path='/engagement' element={<EngagementServices />} />
         </Routes>
         <Footer />
       </>
