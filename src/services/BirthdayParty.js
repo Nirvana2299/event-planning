@@ -66,13 +66,13 @@ export default function BirthdayParty() {
                             <div className='pl-10'>
                                 <ul className='list-disc list-inside'>
                                     <li className='font-medium text-xl my-2'>someIMAGE</li>
-                                    <li className='font-medium text-xl my-2'>someIMAGE</li>
-                                    <li className='font-medium text-xl my-2'>someIMAGE</li>
-                                    <li className='font-medium text-xl my-2'>someIMAGE</li>
-                                    <li className='font-medium text-xl my-2'>someIMAGE</li>
-                                    <li className='font-medium text-xl my-2'>someIMAGE</li>
-                                    <li className='font-medium text-xl my-2'>someIMAGE</li>
-                                    <li className='font-medium text-xl my-2'>someIMAGE</li>
+                                    <li className='font-medium text-xl my-2'>djdsb</li>
+                                    <li className='font-medium text-xl my-2'>snfs</li>
+                                    <li className='font-medium text-xl my-2'>sfsfks</li>
+                                    <li className='font-medium text-xl my-2'>s fsmf </li>
+                                    <li className='font-medium text-xl my-2'>s fms</li>
+                                    <li className='font-medium text-xl my-2'>s fmss</li>
+                                    <li className='font-medium text-xl my-2'>le</li>
                                 </ul>
                             </div>
                         </div>
@@ -116,7 +116,7 @@ export default function BirthdayParty() {
                     <div className="flex flex-row py-4 sm:py-16 sm:px-4 justify-center flex-wrap">
                         {images.map((image) => (
                             <div className='w-auto h-auto py-0.5 sm:h-96 object-filled pr-1 pl-1 md:pr-6 md:pl-6 transition ease-in-out delay-150 bg-bisque-100 duration-300' >
-                                <img className='rounded-lg h-44 w-screen sm:h-80 sm:w-80 object-cover bg-bisque-100 hover:opacity-75' src={image.url} alt='someIMAGE' />
+                                <img className='rounded-lg h-44 w-screen sm:h-80 sm:w-80 object-cover bg-bisque-100 hover:opacity-75' src={image.url} alt='' />
                                 <h3 className="flex justify-center text-2xl text-bisque-800 leading-8 pt-2">{image.image}</h3>
                             </div>
                         )
