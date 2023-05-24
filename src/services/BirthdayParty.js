@@ -71,6 +71,8 @@ export default function BirthdayParty() {
                                     <li className='font-medium text-xl my-2'>someIMAGE</li>
                                     <li className='font-medium text-xl my-2'>someIMAGE</li>
                                     <li className='font-medium text-xl my-2'>someIMAGE</li>
+                                    <li className='font-medium text-xl my-2'>someIMAGE</li>
+                                    <li className='font-medium text-xl my-2'>someIMAGE</li>
                                 </ul>
                             </div>
                         </div>
