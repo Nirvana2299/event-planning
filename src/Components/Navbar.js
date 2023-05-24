@@ -15,12 +15,12 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const services = [
-  { name: 'Birthday Party', description: 'Get a better understanding of your traffic', to: '/birthdayParty', icon: CakeIcon },
+  { name: 'Birthday Party', description: 'Get a better understanding of your traffic', to: '/birthday-party', icon: CakeIcon },
   { name: 'Engagement', description: 'Speak directly to your customers', to: '/engagement', icon: CursorArrowRaysIcon },
   { name: 'Anniversary', description: 'Your customers’ data will be safe and secure', to: '/anniversary', icon: FingerPrintIcon },
-  { name: 'Baby Shower', description: 'Connect with third-party tools', to: '/babyShower', icon: SquaresPlusIcon },
-  { name: 'Cultural Event', description: 'Build strategic funnels that will convert', to: '/culturalEvent', icon: ArrowPathIcon },
-  { name: 'Annual Function', description: 'Build strategic funnels that will convert', to: '/annualFunction', icon: ArrowPathIcon }
+  { name: 'Baby Shower', description: 'Connect with third-party tools', to: '/baby-shower', icon: SquaresPlusIcon },
+  { name: 'Cultural Event', description: 'Build strategic funnels that will convert', to: '/cultural-event', icon: ArrowPathIcon },
+  { name: 'Annual Function', description: 'Build strategic funnels that will convert', to: '/annual-function', icon: ArrowPathIcon }
 ]
 // const callsToAction = [
 //   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
