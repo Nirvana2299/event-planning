@@ -16,7 +16,7 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/
 
 const services = [
   { name: 'Birthday Party', description: 'Get a better understanding of your traffic', to:'/birthday-party', icon: CakeIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', to: '/engagement', icon: CursorArrowRaysIcon },
+  { name: 'Engagement', description: 'Speak directly to your customers', to: '/engagement-services', icon: CursorArrowRaysIcon },
   { name: 'Anniversary', description: 'Your customers’ data will be safe and secure', to:'/anniversary', icon: FingerPrintIcon },
   { name: 'Baby Shower', description: 'Connect with third-party tools', to: '/baby-shower', icon: SquaresPlusIcon },
   { name: 'Cultural Event', description: 'Build strategic funnels that will convert', to:'/cultural-event', icon: ArrowPathIcon },
@@ -96,10 +96,10 @@ export default function Navbar() {
                         <item.icon className="h-6 w-6 text-bisque-600 group-hover:text-bisque-600" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
-                        <a href={item.to} className="block font-semibold text-bisque-900">
+                        <Link to={item.to} className="block font-semibold text-bisque-900">
                           {item.name}
                           <span className="absolute inset-0" />
-                        </a>
+                        </Link>
                         <p className="mt-1 text-bisque-600">{item.description}</p>
                       </div>
                     </div>
@@ -177,11 +177,12 @@ export default function Navbar() {
                         {[...services].map((item) => (
                           <Disclosure.Button
                             key={item.name}
-                            as="a"
-                            href={item.to}
+                            as="a" >
+                           <Link to={item.to}
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-bisque-900 hover:bg-gray-50"
                           >
                             {item.name}
+                            </Link>
                           </Disclosure.Button>
                         ))}
                       </Disclosure.Panel>
