@@ -2,11 +2,11 @@ export default function Footer() {
     return (
         <footer>
             
-                <div className="grid gap-4 grid-cols-1 md:grid-cols-3 bg-black text-white">
+                <div className="grid gap-4 grid-cols-1 md:grid-cols-3 bg-black text-bisque-100">
                     <div className="w-auto py-6 px-6">
                         <h3 className="font-bold">Quick Links</h3>
                         <ul className="text-left pt-4">
-                            <li>Home</li>
+                            <li><a href="">Home</a></li>
                             <li>Who We Are</li>
                             <li>Success Story</li>
                             <li>Contact Us</li>
