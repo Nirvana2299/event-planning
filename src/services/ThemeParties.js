@@ -1,5 +1,7 @@
 import Line from './../Components/Line'
 
+const image = 'https://images.unsplash.com/photo-1625619080917-7d6ff39e0675?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80'
+
 const images = [
     {
         url:
@@ -42,13 +44,11 @@ export default function ThemeParties() {
             </div>
 
 
-            <div className="px-10">
-
-
-                <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-                    <div className="lg:pr-8 lg:pt-4">
-                        <div className="">
-                            <p className=" mt-6 text-xl text-center leading-8 text-bisque-700 sm:text-lg sm:text-left">
+            <div className='lg:px-10 px-4'>
+                <div className="mx-auto grid max-w-2xl grid-cols-1 lg:gap-x-8 gap-y-4 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                
+                        <div className="col-span-2 lg:pr-10">
+                            <p className=" mt-6 text-xl text-center leading-8 text-bisque-700 sm:text-lg sm:text-left pb-4">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
                                 iste dolor cupiditate blanditiis ratione.
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
@@ -58,55 +58,28 @@ export default function ThemeParties() {
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
                                 iste dolor cupiditate blanditiis ratione.
                             </p>
+                            <img className='w-screen h-64 object-cover rounded-lg' src={image}/>
                         </div>
-                    </div>
-                    <div className='mt-6 border-dashed border-2 border-gentlecare-100' >
+            
+                    <div className='mt-6 border-dashed border-2 border-gentlecare-100 lg:w-auto' >
                         <div className='py-4 px-4'>
-                            <h2 className="text-3xl text-center cursive font-bold tracking-tight text-bisque-900 sm:text-4xl">What We Do</h2>
+                            <h2 className="text-3xl text-center cursive font-bold tracking-tight text-bisque-900 sm:text-4xl pb-2">What We Do</h2>
                             <div className='pl-10'>
                                 <ul className='list-disc list-inside'>
-                                    <li className='font-medium text-xl my-2'>someIMAGE</li>
-                                    <li className='font-medium text-xl my-2'>djdsb</li>
-                                    <li className='font-medium text-xl my-2'>snfs</li>
-                                    <li className='font-medium text-xl my-2'>sfsfks</li>
-                                    <li className='font-medium text-xl my-2'>s fsmf </li>
-                                    <li className='font-medium text-xl my-2'>s fms</li>
-                                    <li className='font-medium text-xl my-2'>s fmss</li>
-                                    <li className='font-medium text-xl my-2'>le</li>
+                                    <li className='font-medium text-xl my-2'>Venue Selection</li>
+                                    <li className='font-medium text-xl my-2'>Logistics & Hospitality</li>
+                                    <li className='font-medium text-xl my-2'>Decor</li>
+                                    <li className='font-medium text-xl my-2'>Catering</li>
+                                    <li className='font-medium text-xl my-2'>Entertainment</li>
+                                    <li className='font-medium text-xl my-2'>Conceptual</li>
+                                    <li className='font-medium text-xl my-2'>Entries</li>
+                                    <li className='font-medium text-xl my-2'>Makeover Artist</li>
+                                    <li className='font-medium text-xl my-2'>Choreography</li>
+                                    <li className='font-medium text-xl my-2'>Photography</li>
                                 </ul>
                             </div>
                         </div>
-
-                        {/* 
-                            <dl class="mt-8 gap-x-6 py-8 gap-y-10">
-                                <div class="pt-8">
-                                    <dt class="text-center font-medium text-xl text-bisque-900">Origin</dt>
-                                    <dd class="mt-2 text-sm text-bisque-500">Designed by Good Goods, Inc.</dd>
-                                </div>
-                                <div class="pt-8">
-                                    <dt class="text-center font-medium text-xl text-bisque-900">Material</dt>
-                                    <dd class="mt-2 text-sm text-bisque-500">Solid walnut base with rare earth magnets and powder coated steel card cover</dd>
-                                </div>
-                                <div class="pt-8">
-                                    <dt class="text-center font-medium text-xl text-bisque-900">Dimensions</dt>
-                                    <dd class="mt-2 text-sm text-bisque-500">6.25&quot; x 3.55&quot; x 1.15&quot;</dd>
-                                </div>
-                                <div class="pt-8">
-                                    <dt class="text-center font-medium text-xl text-bisque-900">Finish</dt>
-                                    <dd class="mt-2 text-sm text-bisque-500">Hand sanded and finished with natural oil</dd>
-                                </div>
-                                <div class="pt-8">
-                                    <dt class="text-center font-medium text-xl text-bisque-900">Includes</dt>
-                                    <dd class="mt-2 text-sm text-bisque-500">Wood card tray and 3 refill packs</dd>
-                                </div>
-                                <div class="pt-8">
-                                    <dt class="text-center font-medium text-xl text-bisque-900">Considerations</dt>
-                                    <dd class="mt-2 text-sm text-bisque-500">Made from natural materials. Grain and color vary with each item.</dd>
-                                </div>
-                            </dl>
-                        */}
                     </div>
-
                 </div>
                 <div>
                     <div className="flex justify-center pt-8 sm:pt-16 pb-6">
@@ -115,9 +88,9 @@ export default function ThemeParties() {
                     <Line />
                     <div className="flex flex-row py-4 sm:py-16 sm:px-4 justify-center flex-wrap">
                         {images.map((image) => (
-                            <div className='w-auto h-auto py-0.5 sm:h-96 object-filled pr-1 pl-1 md:pr-6 md:pl-6 transition ease-in-out delay-150 bg-bisque-100 duration-300' >
-                                <img className='rounded-lg h-44 w-screen sm:h-80 sm:w-80 object-cover bg-bisque-100 hover:opacity-75' src={image.url} alt='' />
-                                <h3 className="flex justify-center text-2xl text-bisque-800 leading-8 pt-2">{image.image}</h3>
+                            <div className='w-auto h-auto py-2 sm:h-96 object-filled pr-1 pl-1 md:pr-6 md:pl-6 transition ease-in-out delay-150 bg-bisque-100 duration-300' >
+                                <img className='rounded-lg h-56 w-screen sm:h-80 sm:w-96 object-cover bg-bisque-100 hover:opacity-75' src={image.url} alt='' />
+                                {/* <h3 className="flex justify-center text-2xl text-bisque-800 leading-8 pt-2">{image.image}</h3> */}
                             </div>
                         )
                         )
