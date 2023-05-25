@@ -15,12 +15,17 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const services = [
-  { name: 'Birthday Party', description: 'Get a better understanding of your traffic', to:'/birthday-party', icon: CakeIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', to: '/engagement-services', icon: CursorArrowRaysIcon },
+  { name: 'Wedding Plannimg', description: 'Get a better understanding of your traffic', to:'/wedding-planning', icon: CakeIcon },
+  { name: 'Corperate Event', description: 'Get a better understanding of your traffic', to:'/corperate-event', icon: CakeIcon },
   { name: 'Anniversary', description: 'Your customers’ data will be safe and secure', to:'/anniversary', icon: FingerPrintIcon },
+  { name: 'Inauguration', description: 'Get a better understanding of your traffic', to:'/inauguration', icon: CakeIcon },
+  { name: 'Farewell Parties', description: 'Get a better understanding of your traffic', to:'/farewell-parties', icon: CakeIcon },
+  { name: 'Birthday Party', description: 'Get a better understanding of your traffic', to:'/birthday-party', icon: CakeIcon },
+  { name: 'Theme Parties', description: 'Get a better understanding of your traffic', to:'/theme-parties', icon: CakeIcon },
+  { name: 'Private Parties', description: 'Speak directly to your customers', to: '/private-parties', icon: CursorArrowRaysIcon },
   { name: 'Baby Shower', description: 'Connect with third-party tools', to: '/baby-shower', icon: SquaresPlusIcon },
-  { name: 'Cultural Event', description: 'Build strategic funnels that will convert', to:'/cultural-event', icon: ArrowPathIcon },
-  { name: 'Annual Function', description: 'Build strategic funnels that will convert', to:'/annual-function', icon: ArrowPathIcon }
+  { name: 'Naming Ceremony', description: 'Build strategic funnels that will convert', to:'/naming-ceremony', icon: ArrowPathIcon },
+  { name: 'Surprise Proposal', description: 'Build strategic funnels that will convert', to:'/surprise-proposal', icon: ArrowPathIcon }
 ]
 // const callsToAction = [
 //   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
@@ -55,7 +60,7 @@ export default function Navbar() {
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
 
-          <Link to='/' className="text-md font-semibold leading-6 text-bisque-900 hover:text-white">
+          <Link to='/' className="text-md font-semibold leading-6 text-bisque-900 hover:underline decoration-current decoration-from-font underline-offset-8">
             Home
           </Link>
           <a href="#aboutUsSection" className="text-md font-semibold leading-6 text-bisque-900">
