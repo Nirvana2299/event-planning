@@ -2,17 +2,23 @@ import './styles.css'
 import Home from './pages/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './Components/Navbar';
-import Ring from './pages/Ring';
-import Isle from './pages/Isle';
-import Dine from './pages/Dine';
-import Engagement from './pages/Engagement';
 import Footer from './Components/Footer';
 import Anniversary from './services/Anniversary';
-import AnnualFunction from './services/AnnualFunction';
+import CorperateEvent from './services/CorperateEvent';
 import BabyShower from './services/BabyShower';
 import BirthdayParty from './services/BirthdayParty';
-import CulturalEvent from './services/CulturalEvent';
-import EngagementServices from './services/EngagementServices';
+import NamingCeremony from './services/NamingCeremony';
+import SurpriseProposal from './services/SurpriseProposal';
+import FloatButton from './Components/FloatButton';
+import Wedding from './pages/Wedding';
+import Entertainment from './pages/Entertainment';
+import Catering from './pages/Catering';
+import Decoration from './pages/Decoration';
+import WeddingPlanning from './services/WeddingPlanning'
+import Inauguration from './services/Inaugurations'
+import ThemeParties from './services/ThemeParties'
+import PrivateParties from './services/PrivateParties'
+import FarewellParties from './services/FarewellParties'
 
 function App() {
   return (
@@ -20,19 +26,24 @@ function App() {
       <>
         <Navbar />
         <Routes>
-        <Route path='/anniversary' element={<Anniversary />} />
-          <Route path='/annual-function' element={<AnnualFunction />} />
-          <Route path='/baby-shower' element={<BabyShower />} />
+        <Route path='/wedding-planning' element={<WeddingPlanning />} />
+          <Route path='/corperate-event' element={<CorperateEvent />} />
+          <Route path='/anniversary' element={<Anniversary />} />
+          <Route path='/inauguration' element={<Inauguration />} />
+          <Route path='/farewell-parties' element={<FarewellParties />} />
           <Route path='/birthday-party' element={<BirthdayParty />} />
-          <Route path='/cultural-event' element={<CulturalEvent />} />
-          <Route path='/engagement-services' element={<EngagementServices />} />
+          <Route path='/theme-parties' element={<ThemeParties />} />
+          <Route path='/private-parties' element={<PrivateParties />} />
+          <Route path='/baby-shower' element={<BabyShower />} />
+          <Route path='/naming-ceremony' element={<NamingCeremony />} />
+          <Route path='/surprise-proposal' element={<SurpriseProposal />} />
           <Route path='/' element={<Home />} />
-          <Route path='/ring' element={<Ring />} />
-          <Route path='/engagement' element={<Engagement />} />
-          <Route path='/isle' element={<Isle />} />
-          <Route path='/dine' element={<Dine />} />
-          
+          <Route path='/wedding' element={<Wedding />} />
+          <Route path='/decoration' element={<Decoration />} />
+          <Route path='/entertainment' element={<Entertainment />} />
+          <Route path='/catering' element={<Catering />} />
         </Routes>
+        <FloatButton />
         <Footer />
       </>
     </BrowserRouter>
