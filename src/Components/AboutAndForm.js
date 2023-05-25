@@ -12,7 +12,7 @@ export default function AboutAndForm() {
                 About Us
               </h1>
               <p className="mt-2 cursive text-3xl text-center font-bold tracking-tight text-bisque-900 sm:text-4xl sm:text-left subpixel-antialiased">A better workflow</p>
-              <p className="mt-6 text-xl text-center leading-8 text-bisque-600 sm:text-lg sm:text-left">
+              <p className="mt-6 text-xl text-justify leading-8 text-bisque-800 sm:text-lg sm:text-left">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
                 iste dolor cupiditate blanditiis ratione.
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
