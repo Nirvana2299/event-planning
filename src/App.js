@@ -19,12 +19,14 @@ import Inauguration from './services/Inaugurations'
 import ThemeParties from './services/ThemeParties'
 import PrivateParties from './services/PrivateParties'
 import FarewellParties from './services/FarewellParties'
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
   return (
     <BrowserRouter>
       <>
         <Navbar />
+        <ScrollToTop>
         <Routes>
         <Route path='/wedding-planning' element={<WeddingPlanning />} />
           <Route path='/corperate-event' element={<CorperateEvent />} />
@@ -43,6 +45,7 @@ function App() {
           <Route path='/entertainment' element={<Entertainment />} />
           <Route path='/catering' element={<Catering />} />
         </Routes>
+        </ScrollToTop>
         <FloatButton />
         <Footer />
       </>
