@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "react-alice-carousel/lib/alice-carousel.css";
 
 body {
     background-color: #ffe4c4;
@@ -14,5 +15,4 @@ header {
   position: fixed;
   z-index: 5;
 }
-
 
