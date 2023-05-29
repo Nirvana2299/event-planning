@@ -44,14 +44,7 @@ export default function Decoration() {
             <div className="px-6">
                 <div>
                     <p className=" mt-6 text-xl text-center leading-8 text-bisque-700 sm:text-lg sm:text-left">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                        iste dolor cupiditate blanditiis ratione.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                        iste dolor cupiditate blanditiis ratione.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                        iste dolor cupiditate blanditiis ratione.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                        iste dolor cupiditate blanditiis ratione.
+                    Welcome to Elegant Events, your premier destination for exquisite decorations that transform any venue into a magical wonderland. From enchanting floral arrangements to captivating lighting designs, our expert team creates an ambiance that leaves a lasting impression. Elevate your special occasions with our impeccable attention to detail and unrivaled creativity. Discover the perfect fusion of elegance and style, tailored to your unique vision. Experience the magic of Elegant Events today.
                     </p>
                 </div>
                 <div>

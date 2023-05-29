@@ -44,14 +44,7 @@ export default function Wedding() {
             <div className="px-6">
                 <div>
                     <p className=" mt-6 text-xl text-center leading-8 text-bisque-700 sm:text-lg sm:text-left">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                        iste dolor cupiditate blanditiis ratione.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                        iste dolor cupiditate blanditiis ratione.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                        iste dolor cupiditate blanditiis ratione.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                        iste dolor cupiditate blanditiis ratione.
+                    Welcome to The Enchanted Garden, the perfect venue for your dream wedding. Immerse yourself in our picturesque surroundings, adorned with vibrant flowers and lush greenery. Our elegant indoor and outdoor spaces can accommodate intimate gatherings or grand celebrations. Let our dedicated team craft an unforgettable experience tailored to your every desire. Celebrate love amidst enchanting beauty at The Enchanted Garden.
                     </p>
                 </div>
                 <div>

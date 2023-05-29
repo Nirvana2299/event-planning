@@ -44,14 +44,7 @@ export default function Catering() {
             <div className="px-6">
                 <div>
                     <p className=" mt-6 text-xl text-center leading-8 text-bisque-700 sm:text-lg sm:text-left">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                        iste dolor cupiditate blanditiis ratione.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                        iste dolor cupiditate blanditiis ratione.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                        iste dolor cupiditate blanditiis ratione.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                        iste dolor cupiditate blanditiis ratione.
+                    Welcome to The Perfect Palette Catering, where delectable flavors meet impeccable service. Our experienced team will transform your venue into a culinary haven, offering an exquisite range of gourmet dishes tailored to your preferences. From elegant weddings to corporate galas, we create unforgettable dining experiences. Discover the perfect blend of taste and sophistication with The Perfect Palette Catering.
                     </p>
                 </div>
                 <div>

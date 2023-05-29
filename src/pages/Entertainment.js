@@ -44,14 +44,7 @@ export default function Entertainment() {
             <div className="px-6">
                 <div>
                     <p className=" mt-6 text-xl text-center leading-8 text-bisque-700 sm:text-lg sm:text-left">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                        iste dolor cupiditate blanditiis ratione.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                        iste dolor cupiditate blanditiis ratione.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                        iste dolor cupiditate blanditiis ratione.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                        iste dolor cupiditate blanditiis ratione.
+                    Welcome to Stellar Entertainment Center, the ultimate destination for unforgettable experiences! Explore our state-of-the-art venue, featuring thrilling live performances, blockbuster movies, and immersive gaming zones. Unleash your inner adventurer with our adrenaline-pumping attractions. Discover the perfect blend of entertainment, relaxation, and indulgence at Stellar Entertainment Center. Book your tickets now and embark on an extraordinary journey!
                     </p>
                 </div>
                 <div>
