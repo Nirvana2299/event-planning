@@ -14,7 +14,7 @@ import {
 import { ChevronDownIcon} from '@heroicons/react/20/solid'
 
 const services = [
-  { name: 'Wedding Plannimg', description: 'Get a better understanding of your traffic', to:'/wedding-planning', icon: CakeIcon },
+  { name: 'Wedding Planning', description: 'Get a better understanding of your traffic', to:'/wedding-planning', icon: CakeIcon },
   { name: 'Corperate Event', description: 'Get a better understanding of your traffic', to:'/corperate-event', icon: CakeIcon },
   { name: 'Anniversary', description: 'Your customers’ data will be safe and secure', to:'/anniversary', icon: FingerPrintIcon },
   { name: 'Inauguration', description: 'Get a better understanding of your traffic', to:'/inauguration', icon: CakeIcon },
