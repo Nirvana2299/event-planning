@@ -13,14 +13,7 @@ export default function AboutAndForm() {
               </h1>
               <p className="mt-2 cursive text-3xl text-center font-bold tracking-tight text-bisque-900 sm:text-4xl sm:text-left subpixel-antialiased">A better workflow</p>
               <p className="mt-6 text-xl text-justify leading-8 text-bisque-800 sm:text-2xl sm:text-left">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                iste dolor cupiditate blanditiis ratione.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                iste dolor cupiditate blanditiis ratione.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                iste dolor cupiditate blanditiis ratione.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                iste dolor cupiditate blanditiis ratione.
+              Welcome! We are a premier event venue that caters to all your celebration needs. With our stunning facilities, impeccable service, and customizable event packages, we create unforgettable experiences. From weddings to corporate gatherings, our versatile spaces and state-of-the-art amenities ensure every occasion is a resounding success. Trust us to bring your vision to life and make your event truly exceptional. Book your next gathering with us and create cherished memories that will last a lifetime.
               </p>
             </div>
           </div>
