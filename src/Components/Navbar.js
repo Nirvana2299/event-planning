@@ -59,10 +59,10 @@ export default function Navbar() {
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
 
-          <Link to='/' className="text-md font-semibold leading-6 text-bisque-900 hover:underline decoration-bisque-700 decoration-2 decoration-from-font underline-offset-8">
+          <Link to='/' className="text-md font-semibold leading-6 text-bisque-900 hover:underline decoration-bisque-700 decoration-2 underline-offset-8">
             Home
           </Link>
-          <a href="#aboutUsSection" className="text-md font-semibold leading-6 text-bisque-900 hover:underline decoration-bisque-700 decoration-2 decoration-from-font underline-offset-8">
+          <a href="#aboutUsSection" className="text-md font-semibold leading-6 text-bisque-900 hover:underline decoration-bisque-700 decoration-2 underline-offset-8">
             About Us
           </a>
           {/* <a href="#eventSection" className="text-md font-semibold leading-6 text-bisque-900">
@@ -71,7 +71,7 @@ export default function Navbar() {
 
           {/* ////////////////////////////////////////////////////////////////////////////////////////////// Services popup panel ///////////////////////////////////////////////////////////////////////////////////////////////////// */}
           <Popover className="relative">          
-              <Popover.Button className="flex items-center gap-x-1 text-md font-semibold leading-6 text-bisque-900 hover:underline decoration-bisque-700 decoration-2 decoration-from-font underline-offset-8">
+              <Popover.Button className="flex items-center gap-x-1 text-md font-semibold leading-6 text-bisque-900 hover:underline decoration-bisque-700 decoration-2 underline-offset-8">
                 Services
                 <ChevronDownIcon className="h-5 w-5 flex-none text-bisque-400" aria-hidden="true" />
               </Popover.Button>        
@@ -107,7 +107,7 @@ export default function Navbar() {
               </Popover.Panel>
             </Transition>
           </Popover>
-          <a href="#portfolioSection" className="text-md font-semibold leading-6 text-bisque-900 hover:underline decoration-bisque-700 decoration-2 decoration-from-font underline-offset-8">
+          <a href="#portfolioSection" className="text-md font-semibold leading-6 text-bisque-900 hover:underline decoration-bisque-700 decoration-2 underline-offset-8">
             Portfolio
           </a>
         </Popover.Group>
