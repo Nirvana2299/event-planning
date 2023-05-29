@@ -1,7 +1,6 @@
-import { Transition, Popover } from '@headlessui/react';
+import { Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
 import { IoChatbubblesSharp, IoCloseCircleSharp, IoLogoWhatsapp, IoCallOutline } from 'react-icons/io5';
-import { BsTelephoneFill } from 'react-icons/bs'
 
 const FloatButton = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,33 +11,36 @@ const FloatButton = () => {
 
   return (
     <div className="fixed bottom-4 left-4">
-      <Popover>
-        <Popover.Button>
-          {isOpen ? (
-            <IoCloseCircleSharp className="bg-transparent h-12 w-12 text-bisque-700" />
-          ) : (
-            <IoChatbubblesSharp className="bg-transparent h-12 w-12 text-bisque-700" />
-          )}
-        </Popover.Button>
-        <Transition
-          as={Fragment}
-          enter="transition ease-out duration-200"
-          enterFrom="opacity-0 translate-y-1"
-          enterTo="opacity-100 translate-y-0"
-          leave="transition ease-in duration-150"
-          leaveFrom="opacity-100 translate-y-0"
-          leaveTo="opacity-0 translate-y-1"
-        >
-          <Popover.Panel className="flex flex-col gap-2 mt-2">
-            <IoCallOutline className="bg-bisque-700 h-12 w-12 text-bisque-100 py-2 px-2 rounded-full">
+      <button
+        className="bg-transparent h-12 w-12 text-bisque-700 rounded-lg shadow-lg"
+        onClick={toggleOptions}
+      >
+        {isOpen ? (
+          <IoCloseCircleSharp className="h-full w-full" />
+        ) : (
+          <IoChatbubblesSharp className="h-full w-full" />
+        )}
+      </button>
+      <Transition
+        show={isOpen}
+        enter="transition duration-300 ease-in-out transform origin-bottom"
+        enterFrom="opacity-0 scale-95"
+        enterTo="opacity-100 scale-100"
+        leave="transition duration-200 ease-in-out transform origin-bottom"
+        leaveFrom="opacity-100 scale-100"
+        leaveTo="opacity-0 scale-95"
+      >
+        <div className="absolute bottom-16 left-0 w-44">
+          {/* <div className="bg-white border border-gray-200 rounded-lg shadow-lg"> */}
+          <IoCallOutline className="bg-bisque-700 h-12 w-12 text-bisque-100 mb-2 py-2 px-2 rounded-full">
               Option 1
             </IoCallOutline>
             <IoLogoWhatsapp className="bg-bisque-700 h-12 w-12 text-bisque-100 py-2 px-2 rounded-full">
               Option 2
             </IoLogoWhatsapp>
-          </Popover.Panel>
-        </Transition>
-      </Popover>
+          {/* </div> */}
+        </div>
+      </Transition>
     </div>
   );
 };
