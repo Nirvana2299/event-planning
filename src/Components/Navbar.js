@@ -6,13 +6,12 @@ import {
   CakeIcon,
   ArrowPathIcon,
   Bars3Icon,
-  ChartPieIcon,
   CursorArrowRaysIcon,
   FingerPrintIcon,
   SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon} from '@heroicons/react/20/solid'
 
 const services = [
   { name: 'Wedding Plannimg', description: 'Get a better understanding of your traffic', to:'/wedding-planning', icon: CakeIcon },
@@ -71,16 +70,11 @@ export default function Navbar() {
           </a> */}
 
           {/* ////////////////////////////////////////////////////////////////////////////////////////////// Services popup panel ///////////////////////////////////////////////////////////////////////////////////////////////////// */}
-          <Popover className="relative">
-          
+          <Popover className="relative">          
               <Popover.Button className="flex items-center gap-x-1 text-md font-semibold leading-6 text-bisque-900">
-
                 Services
-
                 <ChevronDownIcon className="h-5 w-5 flex-none text-bisque-400" aria-hidden="true" />
-              </Popover.Button>
-           
-
+              </Popover.Button>        
             <Transition
               as={Fragment}
               enter="transition ease-out duration-200"
@@ -113,19 +107,13 @@ export default function Navbar() {
               </Popover.Panel>
             </Transition>
           </Popover>
-      
-
           <a href="#portfolioSection" className="text-md font-semibold leading-6 text-bisque-900">
             Portfolio
           </a>
         </Popover.Group>
       </nav>
-
-
       <Dialog as="div" className="lg:hidden transition ease-in-out duration-200" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
-
-
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto backdrop-blur-3xl bg-bisque-100/60 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">

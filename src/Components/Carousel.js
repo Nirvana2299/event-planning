@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react';
 import { IoArrowBackCircleSharp, IoArrowForwardCircleSharp } from 'react-icons/io5';
 import { useSwipeable } from 'react-swipeable';
-import { Transition } from '@headlessui/react'
 
 export default function Carousel() {
   const images = [
-    {
+       {
       url:
         "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
     },
@@ -48,23 +47,29 @@ export default function Carousel() {
     onSwipedLeft: nextImage,
     onSwipedRight: previousImage,
     preventDefaultTouchmoveEvent: true,
-    trackMouse: true
+    trackMouse: true,
   });
-  
 
   return (
-    <div id='slideSection' className='max-w-fit m-auto pt-[6.80rem] sm:pt-28 relative group left-0 right-0' {...handlers}>
-      <div className="carousel">
-        <div>
-          <img className='image h-80 w-screen sm:h-128 object-cover' src={images[currentIndex].url} alt={`${currentIndex}`} />
+    <div
+      id='slideSection'
+      className='max-w-fit m-auto pt-[6.80rem] sm:pt-28 relative group left-0 right-0'
+      {...handlers}
+    >
+      <div className="carousel">   
+              <img
+                className='image h-80 w-screen sm:h-128 object-cover'
+                src={images[currentIndex].url}
+                alt={`${currentIndex}`}
+              />
         </div>
-        <div className='hidden md:group-hover:block absolute sm:top-[55%] top-[62%] -translate-x-0 translate-y-[-50%] rounded-full left-5 text-4xl sm:text-4xl md:text-6xl backdrop-blur bg-white-100/20 text-bisque-100 cursor-pointer'>
+        <div className='hidden md:group-hover:block absolute sm:top-[55%] top-[62%] -translate-x-0 translate-y-[-50%] rounded-full left-5 text-4xl sm:text-4xl md:text-6xl backdrop-blur bg-white-100/20 text-black cursor-pointer'>
           <IoArrowBackCircleSharp onClick={previousImage}></IoArrowBackCircleSharp>
         </div>
         <div className='hidden md:group-hover:block absolute sm:top-[55%] top-[62%] -translate-x-0 translate-y-[-50%] rounded-full right-5 text-4xl sm:text-4xl md:text-6xl backdrop-blur bg-white-100/20 text-bisque-100 cursor-pointer'>
           <IoArrowForwardCircleSharp onClick={nextImage}></IoArrowForwardCircleSharp>
         </div>
       </div>
-    </div>
+   
   );
 }

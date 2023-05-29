@@ -27,24 +27,24 @@ function App() {
       <>
         <Navbar />
         <ScrollToTop>
-        <Routes>
-        <Route path='/wedding-planning' element={<WeddingPlanning />} />
-          <Route path='/corperate-event' element={<CorperateEvent />} />
-          <Route path='/anniversary' element={<Anniversary />} />
-          <Route path='/inauguration' element={<Inauguration />} />
-          <Route path='/farewell-parties' element={<FarewellParties />} />
-          <Route path='/birthday-party' element={<BirthdayParty />} />
-          <Route path='/theme-parties' element={<ThemeParties />} />
-          <Route path='/private-parties' element={<PrivateParties />} />
-          <Route path='/baby-shower' element={<BabyShower />} />
-          <Route path='/naming-ceremony' element={<NamingCeremony />} />
-          <Route path='/surprise-proposal' element={<SurpriseProposal />} />
-          <Route path='/' element={<Home />} />
-          <Route path='/wedding' element={<Wedding />} />
-          <Route path='/decoration' element={<Decoration />} />
-          <Route path='/entertainment' element={<Entertainment />} />
-          <Route path='/catering' element={<Catering />} />
-        </Routes>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/wedding' element={<Wedding />} />
+            <Route path='/decoration' element={<Decoration />} />
+            <Route path='/entertainment' element={<Entertainment />} />
+            <Route path='/catering' element={<Catering />} />
+            <Route path='/wedding-planning' element={<WeddingPlanning />} />
+            <Route path='/corperate-event' element={<CorperateEvent />} />
+            <Route path='/anniversary' element={<Anniversary />} />
+            <Route path='/inauguration' element={<Inauguration />} />
+            <Route path='/farewell-parties' element={<FarewellParties />} />
+            <Route path='/birthday-party' element={<BirthdayParty />} />
+            <Route path='/theme-parties' element={<ThemeParties />} />
+            <Route path='/private-parties' element={<PrivateParties />} />
+            <Route path='/baby-shower' element={<BabyShower />} />
+            <Route path='/naming-ceremony' element={<NamingCeremony />} />
+            <Route path='/surprise-proposal' element={<SurpriseProposal />} />
+          </Routes>
         </ScrollToTop>
         <FloatButton />
         <Footer />
