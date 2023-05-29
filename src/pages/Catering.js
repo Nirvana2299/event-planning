@@ -56,7 +56,7 @@ export default function Catering() {
                         {images.map((image) => (
                             <div className='w-auto h-auto py-0.5 sm:h-96 object-filled pr-1 pl-1 md:pr-6 md:pl-6 transition ease-in-out delay-150 bg-bisque-100 duration-300' >
                                 <img className='rounded-lg h-44 w-screen sm:h-80 sm:w-80 object-cover bg-bisque-100 hover:opacity-75' src={image.url} alt='image' />
-                                <h3 className="flex justify-center text-2xl text-bisque-800 leading-8 pt-2">{image.image}</h3>
+                                {/* <h3 className="flex justify-center text-2xl text-bisque-800 leading-8 pt-2">{image.image}</h3> */}
                             </div>
                         )
                         )
