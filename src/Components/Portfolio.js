@@ -14,7 +14,7 @@ const imgURL3 =
 const callouts = [
   {
     name: 'Desk and Office',
-    description: 'Work from home accessories',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     imageSrc: {
       image: [imgURL1, imgURL2, imgURL3],
     },
@@ -98,13 +98,13 @@ export default function Portfolio() {
                       
                     />
                   </div>
-                  <h3 className="mt-6 text-sm text-bisque-500">
+                  <h3 className="mt-4 text-base font-semibold text-bisque-900">
                     <a>
                       <span className="absolute inset-0" />
                       {callout.name}
                     </a>
                   </h3>
-                  <p className="text-base font-semibold text-bisque-900">{callout.description}</p>
+                  {/* <p className="text-base font-semibold text-bisque-900">{callout.description}</p> */}
                 </div>
               ))}
             </div>
@@ -139,7 +139,7 @@ export default function Portfolio() {
                   leaveFrom="opacity-100 translate-y-0 md:scale-100"
                   leaveTo="opacity-0 translate-y-4 md:translate-y-0 md:scale-95"
                 >
-                  {/* Popedout Menu */}
+                  {/* Popout Menu */}
                   <Dialog.Panel className="flex w-full transform text-left text-base transition md:my-8 md:max-w-2xl md:px-4 lg:max-w-4xl">
                     <div className="relative flex w-full items-center overflow-hidden backdrop-blur-3xl bg-bisque-100/80 px-4 pb-8 pt-14 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8 rounded-lg">
                       <button
@@ -161,7 +161,7 @@ export default function Portfolio() {
                         </div>
                         <div className="sm:col-span-2 lg:col-span-2">
                           <h3 className="text-lg leading-6 font-medium text-bisque-900">{selectedCallout.name}</h3>
-                          <p className="mt-4 text-sm text-bisque-500">{selectedCallout.description}</p>
+                          <p className="mt-4 text-sm text-bisque-900 text-justify">{selectedCallout.description}</p>
                         </div>
                       </div>
                     </div>
