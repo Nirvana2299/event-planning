@@ -63,7 +63,7 @@ export default function Carousel() {
                 alt={`${currentIndex}`}
               />
         </div>
-        <div className='hidden md:group-hover:block absolute sm:top-[55%] top-[62%] -translate-x-0 translate-y-[-50%] rounded-full left-5 text-4xl sm:text-4xl md:text-6xl backdrop-blur bg-white-100/20 text-black cursor-pointer'>
+        <div className='hidden md:group-hover:block absolute sm:top-[55%] top-[62%] -translate-x-0 translate-y-[-50%] rounded-full left-5 text-4xl sm:text-4xl md:text-6xl backdrop-blur bg-white-100/20 text-bisque-100 cursor-pointer'>
           <IoArrowBackCircleSharp onClick={previousImage}></IoArrowBackCircleSharp>
         </div>
         <div className='hidden md:group-hover:block absolute sm:top-[55%] top-[62%] -translate-x-0 translate-y-[-50%] rounded-full right-5 text-4xl sm:text-4xl md:text-6xl backdrop-blur bg-white-100/20 text-bisque-100 cursor-pointer'>
