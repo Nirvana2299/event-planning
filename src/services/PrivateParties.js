@@ -49,14 +49,7 @@ export default function PrivateParties() {
                 
                         <div className="col-span-2 lg:pr-10">
                             <p className=" mt-6 text-xl text-center leading-8 text-bisque-700 sm:text-lg sm:text-left pb-4">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
+                            Private parties are events organized for a specific group of invited individuals. They can be held in various locations, such as homes, rented venues, or outdoor spaces. Private parties often involve socializing, music, food, and drinks, providing a more intimate and personalized experience for guests. They can be themed or casual, and typically require invitations for attendance.
                             </p>
                             <img className='w-screen h-64 object-cover rounded-lg' src={image}/>
                         </div>

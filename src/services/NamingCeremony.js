@@ -49,14 +49,7 @@ export default function NamingCeremony() {
                 
                         <div className="col-span-2 lg:pr-10">
                             <p className=" mt-6 text-xl text-center leading-8 text-bisque-700 sm:text-lg sm:text-left pb-4">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
+                            "Cherished Beginnings: A Joyous Naming Ceremony Celebrating New Life and Endless Possibilities. Join us as we bestow a name upon our beloved child, symbolizing love, hope, and a bright future. Together, let's embrace this momentous occasion with heartfelt blessings, laughter, and cherished memories."
                             </p>
                             <img className='w-screen h-64 object-cover rounded-lg' src={image}/>
                         </div>

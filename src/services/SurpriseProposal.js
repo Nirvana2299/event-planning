@@ -49,14 +49,7 @@ export default function SurpriceProposal() {
 
                     <div className="col-span-2 lg:pr-10">
                         <p className=" mt-6 text-xl text-center leading-8 text-bisque-700 sm:text-lg sm:text-left pb-4">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                            iste dolor cupiditate blanditiis ratione.
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                            iste dolor cupiditate blanditiis ratione.
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                            iste dolor cupiditate blanditiis ratione.
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                            iste dolor cupiditate blanditiis ratione.
+                        Welcome to our enchanting venue, where dreams come true! Picture this: a breathtaking backdrop of sparkling city lights, fragrant roses adorning the path, and soft music serenading the air. As the sun sets, immerse yourself in pure romance. And amidst this ethereal ambiance, a surprise proposal awaits you, filling your heart with everlasting love. Let the magic unfold at our venue, where forever begins.
                         </p>
                         <img className='w-screen h-64 object-cover rounded-lg' src={image} />
                     </div>

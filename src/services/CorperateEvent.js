@@ -49,16 +49,11 @@ export default function CorperateEvent() {
                 
                         <div className="col-span-2 lg:pr-10">
                             <p className=" mt-6 text-xl text-center leading-8 text-bisque-700 sm:text-lg sm:text-left pb-4">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
+                            Whether it’s launching a product, showcasing a brand or motivating staff, Evolve create corporate events which are impactful. We work closely with all our clients to create an event that stands out and delivers results and are known for bringing the personal touch to every event we organise. From receptions and gala dinners to conferences and press days, we have a wealth of ideas and experience. We are experts in designing and implementing exceptional corporate events, drawing on our many years of experience.
                             </p>
                             <img className='w-screen h-64 object-cover rounded-lg' src={image}/>
+                            <p className=" mt-6 text-xl text-center leading-8 text-bisque-700 sm:text-lg sm:text-left pb-4">
+                            Fret not, we at Gavyan Events believe in your capabilities and visions to success. Plan a grand entrant through a corporate event by showcasing your grandeur with us. We create an impression by our own way demonstrating utmost sophistication and charisma. In short, we aspire to hold you up at the top of the ladder.                            </p>
                         </div>
             
                     <div className='mt-6 border-dashed border-2 border-gentlecare-100 lg:w-auto' >

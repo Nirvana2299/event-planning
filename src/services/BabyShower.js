@@ -49,14 +49,7 @@ export default function BabyShower() {
                 
                         <div className="col-span-2 lg:pr-10">
                             <p className=" mt-6 text-xl text-center leading-8 text-bisque-700 sm:text-lg sm:text-left pb-4">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
+                            A baby shower is a celebration held before the birth of a baby, usually attended by friends and family. It's a time to offer gifts, play games, and share joy with the expectant parents. It's a special occasion to honor and support the parents-to-be as they prepare for their new arrival.
                             </p>
                             <img className='w-screen h-64 object-cover rounded-lg' src={image}/>
                         </div>

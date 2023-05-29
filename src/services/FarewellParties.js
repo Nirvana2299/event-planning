@@ -49,14 +49,7 @@ export default function FarewellParties() {
                 
                         <div className="col-span-2 lg:pr-10">
                             <p className=" mt-6 text-xl text-center leading-8 text-bisque-700 sm:text-lg sm:text-left pb-4">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
+                            Farewell parties are events held to bid farewell to someone who is leaving a group or organization. They provide an opportunity to express appreciation, share memories, and wish the departing person well. These gatherings often involve speeches, gifts, food, and a chance for everyone to say their goodbyes.
                             </p>
                             <img className='w-screen h-64 object-cover rounded-lg' src={image}/>
                         </div>

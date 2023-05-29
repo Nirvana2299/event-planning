@@ -46,21 +46,16 @@ export default function BirthdayParty() {
 
             <div className='lg:px-10 px-4'>
                 <div className="mx-auto grid max-w-2xl grid-cols-1 lg:gap-x-8 gap-y-4 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                
-                        <div className="col-span-2 lg:pr-10">
-                            <p className=" mt-6 text-xl text-center leading-8 text-bisque-700 sm:text-lg sm:text-left pb-4">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                                iste dolor cupiditate blanditiis ratione.
-                            </p>
-                            <img className='w-screen h-64 object-cover rounded-lg' src={image}/>
-                        </div>
-            
+
+                    <div className="col-span-2 lg:pr-10">
+                        <p className=" mt-6 text-xl text-center leading-8 text-bisque-700 sm:text-lg sm:text-left pb-4">
+                            We love party and making the little ones , Adults or even elder ones very happy with our unique work.
+
+                            We pride ourselves on our attention to detail and flexibility to meet our customers individual requirements. We will work with you to ensure that your every need is met according to your budget.
+                        </p>
+                        <img className='w-screen h-64 object-cover rounded-lg' src={image} />
+                    </div>
+
                     <div className='mt-6 border-dashed border-2 border-gentlecare-100 lg:w-auto' >
                         <div className='py-4 px-4'>
                             <h2 className="text-3xl text-center cursive font-bold tracking-tight text-bisque-900 sm:text-4xl pb-2">What We Do</h2>
