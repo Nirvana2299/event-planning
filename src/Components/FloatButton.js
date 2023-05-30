@@ -10,9 +10,9 @@ const FloatButton = () => {
   };
 
   return (
-    <div className="fixed bottom-4 left-4">
+    <div className="fixed bottom-4 right-4">
       <button
-        className="bg-transparent h-12 w-12 text-bisque-700 rounded-lg"
+        className="bg-transparent h-12 w-12 text-pink-700 rounded-lg"
         onClick={toggleOptions}
       >
         {isOpen ? (
@@ -32,10 +32,10 @@ const FloatButton = () => {
       >
         <div className="absolute bottom-16 left-0 w-44">
           {/* <div className="bg-white border border-gray-200 rounded-lg shadow-lg"> */}
-          <IoCallOutline className="bg-bisque-700 h-12 w-12 text-bisque-100 mb-2 py-2 px-2 rounded-full">
+          <IoCallOutline className="bg-blue-500 h-12 w-12 text-black mb-2 py-2 px-2 rounded-full">
               Option 1
             </IoCallOutline>
-            <IoLogoWhatsapp className="bg-bisque-700 h-12 w-12 text-bisque-100 py-2 px-2 rounded-full">
+            <IoLogoWhatsapp className="bg-[#25D366] h-12 w-12 text-black py-2 px-2 rounded-full">
               Option 2
             </IoLogoWhatsapp>
           {/* </div> */}
