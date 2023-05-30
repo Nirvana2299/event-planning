@@ -34,11 +34,11 @@ const images = [
 export default function NamingCeremony() {
     return (
         <div className=" text-bisque-900">
-            <div className="pt-28 text-bisque-900 relative">
+            <div className="pt-24 text-bisque-900 relative">
 
                 <img className="sm:h-80 w-screen object-cover brightness-50" src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=8" />
 
-                <h1 className="absolute inset-0 flex items-center pt-[96px] font-sans justify-center text-2xl sm:text-5xl font-medium pl-12 end-auto text-bisque-100">
+                <h1 className="absolute inset-0 flex items-center pt-[96px] font-sans justify-center text-3xl sm:text-5xl font-medium md:pl-12 text-center md:end-auto text-bisque-100">
                     Naming Ceremony
                 </h1>
             </div>
