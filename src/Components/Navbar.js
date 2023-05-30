@@ -41,7 +41,7 @@ export default function Navbar() {
 
   return (
     <header className="bg-bisque backdrop-blur-3xl bg-bisque-100/80 left-0 right-0 top-0">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-2" aria-label="Global">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 md:p-6 lg:px-2" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             {/* <span className="cursive font-bold text-xl">Night Heaven</span> */}
