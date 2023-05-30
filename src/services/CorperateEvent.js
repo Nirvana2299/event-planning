@@ -53,7 +53,7 @@ export default function CorperateEvent() {
                             </p>
                             <img className='w-screen h-64 object-cover rounded-lg' src={image}/>
                             <p className=" mt-6 text-xl text-center leading-8 text-bisque-700 sm:text-lg sm:text-left pb-4">
-                            Fret not, we at Gavyan Events believe in your capabilities and visions to success. Plan a grand entrant through a corporate event by showcasing your grandeur with us. We create an impression by our own way demonstrating utmost sophistication and charisma. In short, we aspire to hold you up at the top of the ladder.                            </p>
+                            Fret not, we at Tyohaar Events believe in your capabilities and visions to success. Plan a grand entrant through a corporate event by showcasing your grandeur with us. We create an impression by our own way demonstrating utmost sophistication and charisma. In short, we aspire to hold you up at the top of the ladder.                            </p>
                         </div>
             
                     <div className='mt-6 border-dashed border-2 border-gentlecare-100 lg:w-auto' >
