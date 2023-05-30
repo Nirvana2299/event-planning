@@ -31,7 +31,7 @@ const callouts = [
     href: '#',
   },
   {
-    name: 'Travel',
+    name: 'Memorable anniversary themes and decorations',
     description: 'Memorable anniversary themes and decorations.',
     imageSrc: {
       image: [imgURL3, imgURL1, imgURL2],
