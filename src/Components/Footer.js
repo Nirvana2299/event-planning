@@ -14,7 +14,7 @@ export default function Footer() {
                             <li><a href="#aboutUsSection">Contact Us</a></li>
                         </ul>
                     </div>
-                    <div className="w-auto py-6 px-6 md:px-12">
+                    <div className="w-auto py-6 px-6 md:px-12 md:py-12">
                         <h3 className="font-bold">Mobile & E-Mail</h3>
                         <ul className="text-left pt-4">
                             <li>987456321</li>
@@ -22,7 +22,7 @@ export default function Footer() {
                             <li>example@email</li>
                         </ul>
                     </div>
-                    <div className="w-auto py-6 px-6 md:px-12">
+                    <div className="w-auto py-6 px-6 md:px-12 md:py-12">
                         <h3 className="font-bold">Head Office</h3>
                         <p className="text-left pt-4">Robert Robertson, 1234 NW Bobcat Lane, St. Robert, MO 65584-5678 </p>
                     </div>
