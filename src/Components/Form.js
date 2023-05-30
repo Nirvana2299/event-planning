@@ -11,7 +11,7 @@ export default function About() {
     return (
         <div className="bg-dark py-4 px-8 sm:py-8 lg:px-4 border-dashed border-2 border-gentlecare-100">
             <div className="mx-auto max-w-2xl text-center">
-                <h2 className="text-3xl cursive font-bold tracking-tight text-bisque-900 sm:text-4xl">Contact sales</h2>
+                <h2 className="text-3xl cursive font-bold tracking-tight text-bisque-900 sm:text-4xl">Contact Us</h2>
                 {/* <p className="mt-2 text-lg leading-8 text-bisque-600">
                     Aute magna irure deserunt veniam aliqua magna enim voluptate.
                 </p> */}
