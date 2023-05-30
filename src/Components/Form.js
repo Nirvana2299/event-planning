@@ -12,11 +12,11 @@ export default function About() {
         <div className="bg-dark py-4 px-8 sm:py-8 lg:px-4 border-dashed border-2 border-gentlecare-100">
             <div className="mx-auto max-w-2xl text-center">
                 <h2 className="text-3xl cursive font-bold tracking-tight text-bisque-900 sm:text-4xl">Contact sales</h2>
-                <p className="mt-2 text-lg leading-8 text-bisque-600">
+                {/* <p className="mt-2 text-lg leading-8 text-bisque-600">
                     Aute magna irure deserunt veniam aliqua magna enim voluptate.
-                </p>
+                </p> */}
             </div>
-            <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+            <form action="#" method="POST" className="mx-auto mt-12 max-w-xl sm:mt-20">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                     <div>
                         <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-bisque-900">
@@ -88,7 +88,7 @@ export default function About() {
                             />
                         </div>
                     </div>
-                    <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
+                    {/* <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
                         <div className="flex h-6 items-center">
                             <Switch
                                 checked={agreed}
@@ -115,7 +115,7 @@ export default function About() {
                             </a>
                             .
                         </Switch.Label>
-                    </Switch.Group>
+                    </Switch.Group> */}
                 </div>
                 <div className="mt-10">
                     <button
