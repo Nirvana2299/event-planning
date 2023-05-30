@@ -30,7 +30,7 @@ export default function Footer() {
 
                 </div>
                 <div className='bg-black align-center py-2'>
-                    <p className='text-bisque-100 text-center'>Copyright © </p>
+                    <p className='text-bisque-100 text-center'>Copyright © Tyohaar Events</p>
                 </div>
             </div>
             {/* <div className="flex justify-items-center bg-black align-center py-2 border-dashed border-2 border-gentlecare-100" >
