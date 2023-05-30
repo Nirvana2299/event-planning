@@ -38,8 +38,8 @@ export default function Planning() {
       <div className="flex justify-center pt-8 sm:pt-16">
         <p className="sm:text-4xl text-5xl text-bisque-900 subpixel-antialiased cursive font-bold">Services</p>
       </div>
-      
-        <div className="flex flex-row py-4 sm:py-16 sm:px-4 justify-center flex-wrap">
+
+      <div className="flex flex-row py-4 sm:py-16 sm:px-4 justify-center flex-wrap">
         {images.map((image, index) => (
           <div>
             <Link to={image.to}>
@@ -52,9 +52,9 @@ export default function Planning() {
               <h3 className="flex justify-center text-xl text-bisque-800 leading-8 py-1">{image.title}</h3>
             </div>
           </div>
-          ))}
-        </div>
-      
+        ))}
+      </div>
+
     </div>
   )
 }
