@@ -13,15 +13,18 @@ export default function AboutAndForm() {
               </h1>
               <p className="mt-2 cursive text-3xl text-center font-bold tracking-tight text-bisque-900 sm:text-4xl sm:text-left subpixel-antialiased">A better workflow</p>
               <p className="mt-6 text-xl text-justify leading-8 text-bisque-800 sm:text-2xl sm:text-left">
-              Welcome! We are a premier event venue that caters to all your celebration needs. With our stunning facilities, impeccable service, and customizable event packages, we create unforgettable experiences. From weddings to corporate gatherings, our versatile spaces and state-of-the-art amenities ensure every occasion is a resounding success. Trust us to bring your vision to life and make your event truly exceptional. Book your next gathering with us and create cherished memories that will last a lifetime.
+                Gavyan Events has provided full service event management, entertainment, promotion and association management services. Over the years, we have developed a sound reputation within our industry for creativity, efficiency, ability to meet deadlines and flawless execution of events and for providing superior association services.
+              </p>
+              <p className="mt-6 text-xl text-justify leading-8 text-bisque-800 sm:text-2xl sm:text-left">
+              Gavyan started with a purpose to provide ‘ONE STOP SOLUTIONS’ for all your Wedding- related worries. customer or staff, Gavyan Events assures to handle every part of it with finesse. We step in right at the stage of Idea Generation to its flawless execution. Here, you’ll find a platform that will be unique to you and your brand – a platform that will define your success. Current success stories at “Gavyan Events”
               </p>
             </div>
           </div>
           {/* form part*/}
-        <Form />
+          <Form />
         </div>
       </div>
     </div>
-    
+
   )
 }
