@@ -1,4 +1,5 @@
 import domino from './../image/domino-mask-svgrepo-com.svg'
+import logo from './../image/logo.jpg'
 import { Link } from 'react-router-dom'
 import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
@@ -43,8 +44,8 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-2" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
-            <span className="cursive font-bold text-xl">Night Heaven</span>
-            <img className="h-8 w-auto text-bisque-600" src={domino} alt="" />
+            {/* <span className="cursive font-bold text-xl">Night Heaven</span> */}
+            <img className="h-16 rounded-full w-auto text-bisque-600" src={logo} alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -119,9 +120,9 @@ export default function Navbar() {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
-                className="h-8 w-auto"
-                src={domino}
-                alt=""
+                className="h-12 w-auto rounded-full"
+                src={logo}
+                alt="logo"
               />
             </a>
             <button
