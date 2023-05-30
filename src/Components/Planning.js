@@ -32,28 +32,28 @@ export default function Planning() {
       </div>
 
       <div className="flex flex-row py-4 sm:py-16 sm:px-4 justify-center flex-wrap">
-        <Link to='wedding'>
+        <Link to='weddingPlanning'>
           <div className='w-auto h-auto py-0.5 sm:h-96 object-filled pr-2 pl-2 md:pr-6 md:pl-6 transition ease-in-out delay-150 bg-bisque-100 hover:-translate-y-1 hover:scale-110 hover:bg-transparent duration-300' >
             <img className='rounded-lg h-44 w-44 sm:h-80 sm:w-80 object-cover' src={images[0].url} alt='image1' />
-            <h3 className="flex justify-center text-2xl text-bisque-800 leading-8 py-1">Wedding</h3>
+            <h3 className="flex justify-center text-2xl text-bisque-800 leading-8 py-1">Wedding Planning</h3>
           </div>
         </Link>
-        <Link to='decoration'>
+        <Link to='corperateEvent'>
           <div className='w-auto h-auto py-0.5 sm:h-96 object-filled pr-2 pl-2 md:pr-6 md:pl-6 transition ease-in-out delay-150 bg-bisque-100 hover:-translate-y-1 hover:scale-110 hover:bg-transparent duration-300' >
             <img className='rounded-lg h-44 w-44 sm:h-80 sm:w-80 object-cover' src={images[1].url} alt='image1' />
-            <h3 className="flex justify-center text-2xl text-bisque-800 leading-8 py-1">Decoration</h3>
+            <h3 className="flex justify-center text-2xl text-bisque-800 leading-8 py-1">Corporate Event</h3>
           </div>
         </Link>
-        <Link to='Catering'>
+        <Link to='privateParties'>
           <div className='w-auto h-auto py-0.5 sm:h-96 object-filled pr-2 pl-2 md:pr-6 md:pl-6 transition ease-in-out delay-150 bg-bisque-100 hover:-translate-y-1 hover:scale-110 hover:bg-transparent duration-300' >
             <img className='rounded-lg h-44 w-44 sm:h-80 sm:w-80 object-cover' src={images[2].url} alt='image1' />
-            <h3 className="flex justify-center text-2xl text-bisque-800 leading-8 py-1">Catering</h3>
+            <h3 className="flex justify-center text-2xl text-bisque-800 leading-8 py-1">Private Parties</h3>
           </div>
         </Link>
-        <Link to='entertainment'>
+        <Link to='farewellParties'>
           <div className='w-auto h-auto py-0.5 sm:h-96 object-filled pr-2 pl-2 md:pr-6 md:pl-6 transition ease-in-out delay-150 bg-bisque-100 hover:-translate-y-1 hover:scale-110 hover:bg-transparent duration-300' >
             <img className='rounded-lg h-44 w-44 sm:h-80 sm:w-80 object-cover' src={images[3].url} alt='image1' />
-            <h3 className="flex justify-center text-2xl text-bisque-800 leading-8 py-1">Entertainment</h3>
+            <h3 className="flex justify-center text-2xl text-bisque-800 leading-8 py-1">Farewell Parties</h3>
           </div>
         </Link>
       </div>
