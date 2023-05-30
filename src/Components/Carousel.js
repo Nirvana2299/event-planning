@@ -69,7 +69,7 @@ export default function Carousel() {
   return (
     <div
       id="slideSection"
-      className="max-w-fit m-auto pt-[6.80rem] sm:pt-28 relative group left-0 right-0 overflow-hidden"
+      className="max-w-fit m-auto pt-24 sm:pt-[6.80rem] sm:pt-28 relative group left-0 right-0 overflow-hidden"
       {...handlers}
     >
       <div className="carousel">
