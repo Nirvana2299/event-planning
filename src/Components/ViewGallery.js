@@ -76,7 +76,7 @@ export default function ViewGallery(props) {
                                 >
                                     {/* Popout Menu */}
                                     <Dialog.Panel className="flex w-full transform text-left text-base transition md:my-8 md:max-w-2xl md:px-4 lg:max-w-4xl">
-                                        <div className="relative flex w-full items-center overflow-hidden backdrop-blur bg-bisque-100 bg-opacity-50 sm:bg-opacity-100 px-4 pb-4 pt-4 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8 rounded-lg">
+                                        <div className="relative flex w-full items-center overflow-hidden backdrop-blur bg-bisque-100 bg-opacity-70 sm:bg-opacity-100 px-4 pb-4 pt-4 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8 rounded-lg">
                                             <button
                                                 type="button"
                                                 className="absolute right-4 top-4 text-bisque-600 hover:text-bisque-900 sm:right-6 sm:top-8 md:right-6 md:top-6 lg:right-8 lg:top-8"
@@ -91,7 +91,7 @@ export default function ViewGallery(props) {
                                                     <img
                                                         src={selectedCallout && selectedCallout.url}
                                                         alt={selectedCallout && selectedCallout.name}
-                                                        className="object-cover object-center"
+                                                        className="object-cover sm:object-cover object-center"
                                                     />
                                                 </div>
                                             </div>
