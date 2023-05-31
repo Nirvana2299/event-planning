@@ -12,20 +12,20 @@ import {
   SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon} from '@heroicons/react/20/solid'
+import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 const services = [
-  { name: 'Wedding Planning', description: 'Get a better understanding of your traffic', to:'/wedding-planning', icon: CakeIcon },
-  { name: 'Corperate Event', description: 'Get a better understanding of your traffic', to:'/corperate-event', icon: CakeIcon },
-  { name: 'Anniversary', description: 'Your customers’ data will be safe and secure', to:'/anniversary', icon: FingerPrintIcon },
-  { name: 'Inauguration', description: 'Get a better understanding of your traffic', to:'/inauguration', icon: CakeIcon },
-  { name: 'Farewell Parties', description: 'Get a better understanding of your traffic', to:'/farewell-parties', icon: CakeIcon },
-  { name: 'Birthday Party', description: 'Get a better understanding of your traffic', to:'/birthday-party', icon: CakeIcon },
-  { name: 'Theme Parties', description: 'Get a better understanding of your traffic', to:'/theme-parties', icon: CakeIcon },
+  { name: 'Wedding Planning', description: 'Get a better understanding of your traffic', to: '/wedding-planning', icon: CakeIcon },
+  { name: 'Corperate Event', description: 'Get a better understanding of your traffic', to: '/corperate-event', icon: CakeIcon },
+  { name: 'Anniversary', description: 'Your customers’ data will be safe and secure', to: '/anniversary', icon: FingerPrintIcon },
+  { name: 'Inauguration', description: 'Get a better understanding of your traffic', to: '/inauguration', icon: CakeIcon },
+  { name: 'Farewell Parties', description: 'Get a better understanding of your traffic', to: '/farewell-parties', icon: CakeIcon },
+  { name: 'Birthday Party', description: 'Get a better understanding of your traffic', to: '/birthday-party', icon: CakeIcon },
+  { name: 'Theme Parties', description: 'Get a better understanding of your traffic', to: '/theme-parties', icon: CakeIcon },
   { name: 'Private Parties', description: 'Speak directly to your customers', to: '/private-parties', icon: CursorArrowRaysIcon },
   { name: 'Baby Shower', description: 'Connect with third-party tools', to: '/baby-shower', icon: SquaresPlusIcon },
-  { name: 'Naming Ceremony', description: 'Build strategic funnels that will convert', to:'/naming-ceremony', icon: ArrowPathIcon },
-  { name: 'Surprise Proposal', description: 'Build strategic funnels that will convert', to:'/surprise-proposal', icon: ArrowPathIcon }
+  { name: 'Naming Ceremony', description: 'Build strategic funnels that will convert', to: '/naming-ceremony', icon: ArrowPathIcon },
+  { name: 'Surprise Proposal', description: 'Build strategic funnels that will convert', to: '/surprise-proposal', icon: ArrowPathIcon }
 ]
 // const callsToAction = [
 //   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
@@ -71,11 +71,11 @@ export default function Navbar() {
           </a> */}
 
           {/* ////////////////////////////////////////////////////////////////////////////////////////////// Services popup panel ///////////////////////////////////////////////////////////////////////////////////////////////////// */}
-          <Popover className="relative">          
-              <Popover.Button className="flex items-center gap-x-1 text-md font-semibold leading-6 text-bisque-900 hover:underline decoration-bisque-700 decoration-2 underline-offset-8">
-                Services
-                <ChevronDownIcon className="h-5 w-5 flex-none text-bisque-400" aria-hidden="true" />
-              </Popover.Button>        
+          <Popover className="relative">
+            <Popover.Button className="flex items-center gap-x-1 text-md font-semibold leading-6 text-bisque-900 hover:underline decoration-bisque-700 decoration-2 underline-offset-8">
+              Services
+              <ChevronDownIcon className="h-5 w-5 flex-none text-bisque-400" aria-hidden="true" />
+            </Popover.Button>
             <Transition
               as={Fragment}
               enter="transition ease-out duration-200"
@@ -85,7 +85,7 @@ export default function Navbar() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-[240px] overflow-hidden rounded-xl backdrop-blur-3xl bg-bisque-100 shadow-lg ring-1 ring-bisque-900/5">
+              <Popover.Panel className="bg-bisque-100 absolute -left-8 top-full z-10 mt-3 w-screen max-w-[240px] overflow-hidden rounded-xl shadow-lg ring-1 ring-bisque-900/5">
                 <div className="p-4">
                   {services.map((item) => (
                     <div
@@ -115,7 +115,9 @@ export default function Navbar() {
       </nav>
       <Dialog as="div" className="lg:hidden transition ease-in-out duration-200" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
+
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto backdrop-blur-3xl bg-bisque-100/60 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
@@ -172,10 +174,10 @@ export default function Navbar() {
                           <Disclosure.Button
                             key={item.name}
                             as="a" >
-                           <Link to={item.to}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-bisque-900 hover:bg-gray-50"
-                          >
-                            {item.name}
+                            <Link to={item.to}
+                              className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-bisque-900 hover:bg-gray-50"
+                            >
+                              {item.name}
                             </Link>
                           </Disclosure.Button>
                         ))}
