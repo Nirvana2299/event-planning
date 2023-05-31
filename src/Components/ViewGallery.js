@@ -91,7 +91,7 @@ export default function ViewGallery(props) {
                                                     <img
                                                         src={selectedCallout && selectedCallout.url}
                                                         alt={selectedCallout && selectedCallout.name}
-                                                        className="object-cover sm:object-cover object-center"
+                                                        className="object-cover object-center"
                                                     />
                                                 </div>
                                             </div>
