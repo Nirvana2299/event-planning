@@ -99,7 +99,7 @@ export default function Portfolio() {
               {callouts.map((callout) => (
                 <div key={callout.name} className="group relative" onClick={() => switchOn(callout)} >
                   <div className="relative h-60 w-full overflow-hidden rounded-lg shadow-lg bg-bisque-100 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-60 sm:h-64 hover:shadow-xl transform transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
-                    <div
+                    <div   
                       className="flex"
                       style={{
                         transform: `translateX(-${currentIndex * (100 / callout.imageSrc.image.length)}%)`,
@@ -195,7 +195,7 @@ export default function Portfolio() {
                               </div>
                             ))}
                           </div>
-                          <div className="flex justify-center mt-6">
+                          <div className="hidden flex justify-center mt-6">
                             {selectedCallout.imageSrc.image.map((_, buttonIndex) => (
                               <button
                                 key={buttonIndex}
