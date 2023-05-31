@@ -23,7 +23,7 @@ export default function ViewGallery(props) {
                         <div className="mt-6 mb-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
                             {props.images.map((image) => (
                                 <div key={image.name} className="group relative md:pb-4" onClick={() => switchOn(image)} >
-                                    <div className="relative h-60 w-full overflow-hidden rounded-lg shadow-lg bg-bisque-100 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-60 sm:h-64 hover:shadow-xl transform transition duration-300 ease-in-out">
+                                    <div className="relative h-60 w-full overflow-hidden rounded-lg shadow-lg bg-bisque-100 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64 hover:shadow-xl transform transition duration-300 ease-in-out">
                                         {/* image array, Loops through all the image provided in the callouts variable */}
                                         <img
                                             src={image.url}
@@ -50,10 +50,19 @@ export default function ViewGallery(props) {
                         leaveFrom="opacity-100"
                         leaveTo="opacity-0"
                     >
-                        <div className="fixed inset-0 hidden bg-bisque-600 bg-opacity-75 transition-opacity md:block" />
+                        <div className="fixed inset-0 hidden backdrop-blur bg-bisque-600 bg-opacity-90 transition-opacity md:block" />
                     </Transition.Child>
 
                     <div className="fixed inset-0 z-10 overflow-y-auto">
+                        <button
+                            type="button"
+                            className="absolute right-4 top-4 text-bisque-100 hover:text-red-400 sm:right-6 sm:top-8 md:right-6 md:top-6 lg:right-8 lg:top-8"
+                            onClick={() => setOpen(false)}
+                        >
+                            <span className="sr-only">Close</span>
+                            <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                        </button>
+
                         <div className="flex min-h-full items-stretch justify-center text-center md:items-center md:px-2 lg:px-4">
                             {selectedCallout && (
                                 <Transition.Child
@@ -67,7 +76,7 @@ export default function ViewGallery(props) {
                                 >
                                     {/* Popout Menu */}
                                     <Dialog.Panel className="flex w-full transform text-left text-base transition md:my-8 md:max-w-2xl md:px-4 lg:max-w-4xl">
-                                        <div className="relative flex w-full items-center overflow-hidden bg-bisque-100 px-4 pb-8 pt-14 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8 rounded-lg">
+                                        <div className="relative flex w-full items-center overflow-hidden backdrop-blur bg-bisque-100 bg-opacity-50 sm:bg-opacity-100 px-4 pb-4 pt-4 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8 rounded-lg">
                                             <button
                                                 type="button"
                                                 className="absolute right-4 top-4 text-bisque-600 hover:text-bisque-900 sm:right-6 sm:top-8 md:right-6 md:top-6 lg:right-8 lg:top-8"
