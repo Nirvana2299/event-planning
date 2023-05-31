@@ -12,7 +12,7 @@ const FloatButton = () => {
   return (
     <div className="fixed bottom-4 right-4">
       <button
-        className="bg-transparent h-12 w-12 text-pink-700 rounded-lg"
+        className="bg-transparent h-12 w-12 text-pink-700 rounded-full transform transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-105"
         onClick={toggleOptions}
       >
         {isOpen ? (
@@ -32,10 +32,10 @@ const FloatButton = () => {
       >
         <div className="absolute bottom-16 left-0 w-44">
           {/* <div className="bg-white border border-gray-200 rounded-lg shadow-lg"> */}
-          <IoCallOutline className="bg-blue-500 h-12 w-12 text-black mb-2 py-2 px-2 rounded-full">
+          <IoCallOutline className="bg-blue-500 h-12 w-12 text-black mb-2 py-2 px-2 rounded-full transform transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-100">
               Option 1
             </IoCallOutline>
-            <IoLogoWhatsapp className="bg-[#25D366] h-12 w-12 text-black py-2 px-2 rounded-full">
+            <IoLogoWhatsapp className="bg-[#77DD77] h-12 w-12 text-black py-2 px-2 rounded-full transform transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-100">
               Option 2
             </IoLogoWhatsapp>
           {/* </div> */}
