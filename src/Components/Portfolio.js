@@ -89,7 +89,7 @@ export default function Portfolio() {
             <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
               {callouts.map((callout) => (
                 <div key={callout.name} className="group relative" onClick={() => switchOn(callout)} >
-                  <div className="relative h-60 w-full overflow-hidden rounded-lg bg-bisque-100 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
+                  <div className="relative h-60 w-full overflow-hidden rounded-lg shadow-lg bg-bisque-100 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-60 sm:h-64 hover:shadow-xl transform transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
                     {/* image array, Loops through all the image provided in the callouts variable */}
                     <img
                       src={callout.imageSrc.image[currentIndex]}
@@ -152,7 +152,7 @@ export default function Portfolio() {
                       </button>
 
                       <div className="grid w-full grid-cols-1 items-start gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
-                        <div className="aspect-w-3 aspect-h-4 rounded-lg overflow-hidden sm:col-span-2 lg:col-span-1">
+                        <div className="aspect-w-3 aspect-h-4 sm:aspect-h-5 rounded-lg overflow-hidden sm:col-span-2 lg:col-span-1">
                           <img
                             src={selectedCallout.imageSrc.image[currentIndex]}
                             alt={selectedCallout.imageAlt}

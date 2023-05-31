@@ -1,4 +1,4 @@
-import Line from './../Components/Line'
+import ViewGallery from '../Components/ViewGallery';
 
 const image = 'https://images.unsplash.com/photo-1625619080917-7d6ff39e0675?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80'
 
@@ -32,6 +32,7 @@ const images = [
 ];
 
 export default function Anniversary() {
+
     return (
         <div className=" text-bisque-900">
             <div className="pt-24 text-bisque-900 relative">
@@ -46,14 +47,14 @@ export default function Anniversary() {
 
             <div className='lg:px-10 px-4'>
                 <div className="mx-auto grid max-w-2xl grid-cols-1 lg:gap-x-8 gap-y-4 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                
-                        <div className="col-span-2 lg:pr-10">
-                            <p className=" mt-6 text-xl text-center leading-8 text-bisque-700 sm:text-lg sm:text-left pb-4">
+
+                    <div className="col-span-2 lg:pr-10">
+                        <p className=" mt-6 text-xl text-center leading-8 text-bisque-700 sm:text-lg sm:text-left pb-4">
                             An anniversary is a special occasion that marks the commemoration of a significant event, such as a wedding, a business milestone, or a historical event. It is a time for celebration, reflection, and appreciation of the time passed and the accomplishments achieved. Anniversaries often involve gathering with loved ones, exchanging gifts or tokens of appreciation, and reminiscing about the past. They serve as reminders of important moments and can be a source of joy and nostalgia.
-                            </p>
-                            <img className='w-screen h-64 object-cover rounded-lg' src={image}/>
-                        </div>
-            
+                        </p>
+                        <img className='w-screen h-64 object-cover rounded-lg' src={image} />
+                    </div>
+
                     <div className='mt-6 border-dashed border-2 border-gentlecare-100 lg:w-auto' >
                         <div className='py-4 px-4'>
                             <h2 className="text-3xl text-center cursive font-bold tracking-tight text-bisque-900 sm:text-4xl pb-2">What We Do</h2>
@@ -74,22 +75,7 @@ export default function Anniversary() {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div className="flex justify-center pt-8 sm:pt-16 pb-6">
-                        <p className="sm:text-4xl text-5xl text-bisque-900 subpixel-antialiased cursive font-bold">View Gallery</p>
-                    </div>
-                    <Line />
-                    <div className="flex flex-row py-4 sm:py-16 sm:px-4 justify-center flex-wrap">
-                        {images.map((image) => (
-                            <div className='w-auto h-auto py-2 sm:h-96 object-filled pr-1 pl-1 md:pr-6 md:pl-6 transition ease-in-out delay-150 bg-bisque-100 duration-300' >
-                                <img className='rounded-lg h-56 w-screen md:h-80 md:w-80 sm:h-80 sm:w-96 object-cover bg-bisque-100 hover:opacity-75' src={image.url} alt='' />
-                                {/* <h3 className="flex justify-center text-2xl text-bisque-800 leading-8 pt-2">{image.image}</h3> */}
-                            </div>
-                        )
-                        )
-                        }
-                    </div>
-                </div>
+                <ViewGallery images={images} />
             </div>
         </div>
     )

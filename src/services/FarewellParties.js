@@ -1,4 +1,4 @@
-import Line from './../Components/Line'
+import ViewGallery from '../Components/ViewGallery';
 
 const image = 'https://images.unsplash.com/photo-1625619080917-7d6ff39e0675?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80'
 
@@ -74,22 +74,7 @@ export default function FarewellParties() {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div className="flex justify-center pt-8 sm:pt-16 pb-6">
-                        <p className="sm:text-4xl text-5xl text-bisque-900 subpixel-antialiased cursive font-bold">View Gallery</p>
-                    </div>
-                    <Line />
-                    <div className="flex flex-row py-4 sm:py-16 sm:px-4 justify-center flex-wrap">
-                        {images.map((image) => (
-                            <div className='w-auto h-auto py-2 sm:h-96 object-filled pr-1 pl-1 md:pr-6 md:pl-6 transition ease-in-out delay-150 bg-bisque-100 duration-300' >
-                                <img className='rounded-lg h-56 w-screen md:h-80 md:w-80 sm:h-80 sm:w-96 object-cover bg-bisque-100 hover:opacity-75' src={image.url} alt='' />
-                                {/* <h3 className="flex justify-center text-2xl text-bisque-800 leading-8 pt-2">{image.image}</h3> */}
-                            </div>
-                        )
-                        )
-                        }
-                    </div>
-                </div>
+                <ViewGallery images={images} />
             </div>
         </div>
     )

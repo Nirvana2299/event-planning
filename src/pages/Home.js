@@ -6,16 +6,16 @@ import Line from '../Components/Line';
 import Portfolio from '../Components/Portfolio';
 
 export default function Home() {
-    return (
-      <div>
-        <Carousel />
-        <Planning />
-        <Line />
-        {/* <TieupProperties /> */}
-        <Line />
-        <AboutAndForm />
-        <Line />
-        <Portfolio />
-      </div>
-    );
-  }
+  return (
+    <div>
+      <Carousel />
+      <Planning />
+      <Line />
+      {/* <TieupProperties /> */}
+      <Line />
+      <AboutAndForm />
+      <Line />
+      <Portfolio />
+    </div>
+  );
+}
