@@ -115,7 +115,7 @@ export default function Portfolio() {
                           className="flex-shrink-0 h-full w-full object-cover object-center"
                           style={{ flexBasis: `${100 / callout.imageSrc.image.length}%` }}
                         >
-                          <img src={image} alt={callout.imageAlt} />
+                          <img src={image} alt={callout.imageAlt} className="object-cover object-center h-full w-full" />
                         </div>
                       ))}
                     </div>
