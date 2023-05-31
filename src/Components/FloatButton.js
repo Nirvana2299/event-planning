@@ -12,7 +12,7 @@ const FloatButton = () => {
   return (
     <div className="fixed bottom-4 right-4">
       <button
-        className="bg-transparent h-12 w-12 text-pink-700 rounded-full transform transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-105"
+        className="bg-transparent h-12 w-12 text-pink-700 rounded-full transform transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 noSelect"
         onClick={toggleOptions}
       >
         {isOpen ? (
