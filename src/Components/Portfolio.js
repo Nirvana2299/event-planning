@@ -147,7 +147,7 @@ export default function Portfolio() {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 hidden bg-bisque-600 bg-opacity-75 transition-opacity md:block" />
+            <div className="fixed inset-0 hidden backdrop-blur bg-bisque-600 bg-opacity-75 transition-opacity md:block" />
           </Transition.Child>
 
           <div className="fixed inset-0 z-10 overflow-y-auto">
@@ -175,7 +175,7 @@ export default function Portfolio() {
                       </button>
 
                       <div className="grid w-full grid-cols-1 items-start gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
-                        <div className="aspect-w-3 aspect-h-4 sm:aspect-h-5 rounded-lg overflow-hidden sm:col-span-2 lg:col-span-1">
+                        <div className="aspect-w-3 aspect-h-4 sm:aspect-h-6 rounded-lg overflow-hidden sm:col-span-2 lg:col-span-1">
                           <div
                             className="flex"
                             style={{
@@ -193,6 +193,18 @@ export default function Portfolio() {
                               >
                                 <img src={image} alt={selectedCallout.imageAlt} className="object-cover object-center h-full w-full" />
                               </div>
+                            ))}
+                          </div>
+                          <div className="flex justify-center mt-6">
+                            {selectedCallout.imageSrc.image.map((_, buttonIndex) => (
+                              <button
+                                key={buttonIndex}
+                                className={classNames(
+                                  buttonIndex === currentIndex ? 'bg-bisque-800' : 'bg-bisque-100',
+                                  'w-2 h-2 mx-1 rounded-full'
+                                )}
+                                onClick={() => handleImageChange(buttonIndex)}
+                              />
                             ))}
                           </div>
                         </div>
