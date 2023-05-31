@@ -2,7 +2,7 @@ import { Fragment, useState, useEffect } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { useSwipeable } from 'react-swipeable';
-import { IoArrowBackCircleSharp, IoArrowForwardCircleSharp } from 'react-icons/io5';
+
 
 const imgURL1 =
   'https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80';
@@ -10,6 +10,11 @@ const imgURL2 =
   'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80';
 const imgURL3 =
   'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80';
+const imgURL4 =
+  'https://images.unsplash.com/photo-1480455454781-1af590be2a58?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80';
+const imgURL5 =
+  'https://images.unsplash.com/photo-1484156818044-c040038b0719?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80';
+
 
 const callouts = [
   {
@@ -25,7 +30,7 @@ const callouts = [
     name: 'Fun activities and entertainment options',
     description: 'Journals and note-taking',
     imageSrc: {
-      image: [imgURL2, imgURL1, imgURL3],
+      image: [imgURL4, imgURL5, imgURL4],
     },
     imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
     href: '#',
@@ -49,18 +54,19 @@ export default function Portfolio() {
   const [open, setOpen] = useState(false);
   const [selectedCallout, setSelectedCallout] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+  // const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setCurrentIndex((currentIndex + 1) % callouts.length);
+      setCurrentIndex((currentIndex) => (currentIndex + 1) % callouts.length);
     }, 5000);
     return () => clearInterval(intervalId);
-  }, [currentIndex]);
+  }, []);
 
   function switchOn(callout) {
     setOpen(true);
     setSelectedCallout(callout);
-    setCurrentIndex(0);
+    // setCurrentIndex(0);
   }
 
   const nextImage = () => {
@@ -78,7 +84,10 @@ export default function Portfolio() {
     trackMouse: true
   });
 
-  
+  const handleImageChange = (index) => {
+    setCurrentIndex(index);
+  };
+
 
   return (
     <div id="portfolioSection">
@@ -90,13 +99,28 @@ export default function Portfolio() {
               {callouts.map((callout) => (
                 <div key={callout.name} className="group relative" onClick={() => switchOn(callout)} >
                   <div className="relative h-60 w-full overflow-hidden rounded-lg shadow-lg bg-bisque-100 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-60 sm:h-64 hover:shadow-xl transform transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
-                    {/* image array, Loops through all the image provided in the callouts variable */}
-                    <img
-                      src={callout.imageSrc.image[currentIndex]}
-                      alt={callout.imageAlt}
-                      className="h-full w-full object-cover object-center"
-                      
-                    />
+                    <div
+                      className="flex"
+                      style={{
+                        transform: `translateX(-${currentIndex * (100 / callout.imageSrc.image.length)}%)`,
+                        transition: 'transform 0.8s ease-in-out',
+                        display: 'flex',
+                        width: `${callout.imageSrc.image.length * 100}%`,
+                      }}
+                    >
+                      {/* image array, Loops through all the image provided in the callouts variable */}
+                      {callout.imageSrc.image.map((image, imageIndex) => (
+                        <div
+                          key={imageIndex}
+                          className="flex-shrink-0 h-full w-full object-cover object-center"
+                          style={{ flexBasis: `${100 / callout.imageSrc.image.length}%` }}
+                        >
+                          <img src={image} alt={callout.imageAlt} />
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* <p className="text-base font-semibold text-bisque-900">{callout.description}</p> */}
                   </div>
                   <h3 className="mt-4 text-base font-semibold text-bisque-900">
                     <a>
@@ -104,7 +128,6 @@ export default function Portfolio() {
                       {callout.name}
                     </a>
                   </h3>
-                  {/* <p className="text-base font-semibold text-bisque-900">{callout.description}</p> */}
                 </div>
               ))}
             </div>
@@ -153,11 +176,25 @@ export default function Portfolio() {
 
                       <div className="grid w-full grid-cols-1 items-start gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
                         <div className="aspect-w-3 aspect-h-4 sm:aspect-h-5 rounded-lg overflow-hidden sm:col-span-2 lg:col-span-1">
-                          <img
-                            src={selectedCallout.imageSrc.image[currentIndex]}
-                            alt={selectedCallout.imageAlt}
-                            className="object-cover object-center"
-                          />
+                          <div
+                            className="flex"
+                            style={{
+                              transform: `translateX(-${currentIndex * (100 / selectedCallout.imageSrc.image.length)}%)`,
+                              transition: 'transform 0.8s ease-in-out',
+                              display: 'flex',
+                              width: `${selectedCallout.imageSrc.image.length * 100}%`,
+                            }}
+                          >
+                            {selectedCallout.imageSrc.image.map((image, index) => (
+                              <div
+                                key={index}
+                                className="flex-shrink-0 h-full w-full"
+                                style={{ flexBasis: `${100 / selectedCallout.imageSrc.image.length}%`, }}
+                              >
+                                <img src={image} alt={selectedCallout.imageAlt} className="object-cover object-center h-full w-full" />
+                              </div>
+                            ))}
+                          </div>
                         </div>
                         <div className="sm:col-span-2 lg:col-span-2">
                           <h3 className="text-lg leading-6 font-medium text-bisque-900">{selectedCallout.name}</h3>
