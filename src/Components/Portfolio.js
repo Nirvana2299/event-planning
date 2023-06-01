@@ -84,9 +84,9 @@ export default function Portfolio() {
     trackMouse: true
   });
 
-  const handleImageChange = (index) => {
-    setCurrentIndex(index);
-  };
+  // const handleImageChange = (index) => {
+  //   setCurrentIndex(index);
+  // };
 
 
   return (
@@ -98,7 +98,7 @@ export default function Portfolio() {
             <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
               {callouts.map((callout) => (
                 <div key={callout.name} className="group relative" onClick={() => switchOn(callout)} >
-                  <div className="relative h-60 w-full overflow-hidden rounded-lg shadow-lg bg-bisque-100 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-60 sm:h-64 hover:shadow-xl transform transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-105">
+                  <div className="relative h-60 w-full overflow-hidden rounded-lg shadow-lg bg-bisque-100 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 sm:h-64 hover:shadow-xl group-hover:opacity-60 transform transition duration-300 ease-in-out">
                     <div   
                       className="flex"
                       style={{
