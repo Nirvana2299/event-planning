@@ -12,7 +12,7 @@ export default function AboutAndForm() {
                 About Us
               </h1>
               <p className="mt-2 cursive text-3xl text-center font-bold tracking-tight text-bisque-900 sm:text-4xl sm:text-left subpixel-antialiased">A better workflow</p>
-              <p className="mt-6 text-xl text-justify leading-8 text-bisque-800 sm:text-2xl sm:text-left">
+              <p className="mt-6 text-xl text-justify leading-6 text-bisque-800 sm:text-2xl sm:text-left">
                  Tyohaar Event has provided full service event management, entertainment, promotion and association management services. Over the years, we have developed a sound reputation within our industry for creativity, efficiency, ability to meet deadlines and flawless execution of Tyohaar Event and for providing superior association services.
               </p>
               <p className="mt-6 text-xl text-justify leading-8 text-bisque-800 sm:text-2xl sm:text-left">
