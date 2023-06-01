@@ -48,7 +48,7 @@ export default function Inauguration() {
                 <div className="mx-auto grid max-w-2xl grid-cols-1 lg:gap-x-8 gap-y-4 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                 
                         <div className="col-span-2 lg:pr-10">
-                            <p className=" mt-6 text-xl text-center leading-8 text-bisque-700 sm:text-lg sm:text-left pb-4">
+                            <p className=" mt-6 text-xl text-justify leading-6 text-bisque-700 sm:text-lg sm:text-left pb-4">
                             Inauguration events typically include a swearing-in ceremony, inaugural address, parade, and inaugural balls. They mark the beginning of a new leader's term in office and provide an opportunity for the public to celebrate and witness the peaceful transition of power.
                             </p>
                             <img className='w-screen h-64 object-cover rounded-lg' src={image}/>
