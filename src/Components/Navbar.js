@@ -40,7 +40,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-bisque backdrop-blur-3xl bg-bisque-100/80 left-0 right-0 top-0">
+    <header className="bg-bisque backdrop-blur-xl bg-bisque-100/80 left-0 right-0 top-0">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 md:p-6 lg:px-2" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
@@ -116,7 +116,7 @@ export default function Navbar() {
       <Dialog as="div" className="lg:hidden transition ease-in-out duration-200" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
 
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto backdrop-blur-xl bg-bisque-100/60 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto backdrop-blur-xl bg-bisque-100/80 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
 
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
