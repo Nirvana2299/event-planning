@@ -49,7 +49,7 @@ export default function Anniversary() {
                 <div className="mx-auto grid max-w-2xl grid-cols-1 lg:gap-x-8 gap-y-4 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
 
                     <div className="col-span-2 lg:pr-10">
-                        <p className=" mt-6 text-xl text-center leading-8 text-bisque-700 sm:text-lg sm:text-left pb-4">
+                        <p className=" mt-6 text-xl text-justify leading-6 text-bisque-700 sm:text-lg sm:text-left pb-4">
                             An anniversary is a special occasion that marks the commemoration of a significant event, such as a wedding, a business milestone, or a historical event. It is a time for celebration, reflection, and appreciation of the time passed and the accomplishments achieved. Anniversaries often involve gathering with loved ones, exchanging gifts or tokens of appreciation, and reminiscing about the past. They serve as reminders of important moments and can be a source of joy and nostalgia.
                         </p>
                         <img className='w-screen h-64 object-cover rounded-lg' src={image} />
