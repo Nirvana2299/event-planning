@@ -195,7 +195,7 @@ export default function Portfolio() {
                               </div>
                             ))}
                           </div>
-                          <div className="hidden flex justify-center mt-6">
+                          {/* <div className="hidden flex justify-center mt-6">
                             {selectedCallout.imageSrc.image.map((_, buttonIndex) => (
                               <button
                                 key={buttonIndex}
@@ -206,7 +206,7 @@ export default function Portfolio() {
                                 onClick={() => handleImageChange(buttonIndex)}
                               />
                             ))}
-                          </div>
+                          </div> */}
                         </div>
                         <div className="sm:col-span-2 lg:col-span-2">
                           <h3 className="text-lg leading-6 font-medium text-bisque-900">{selectedCallout.name}</h3>
