@@ -48,7 +48,7 @@ export default function BirthdayParty() {
                 <div className="mx-auto grid max-w-2xl grid-cols-1 lg:gap-x-8 gap-y-4 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
 
                     <div className="col-span-2 lg:pr-10">
-                        <p className=" mt-6 text-xl text-center leading-8 text-bisque-700 sm:text-lg sm:text-left pb-4">
+                        <p className=" mt-6 text-xl text-justify leading-6 text-bisque-700 sm:text-lg sm:text-left pb-4">
                             We love party and making the little ones , Adults or even elder ones very happy with our unique work.
 
                             We pride ourselves on our attention to detail and flexibility to meet our customers individual requirements. We will work with you to ensure that your every need is met according to your budget.
