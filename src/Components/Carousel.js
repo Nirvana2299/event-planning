@@ -77,7 +77,7 @@ export default function Carousel() {
           {images.map((image, index) => (
             <div key={index} className="slide" style={imageStyles}>
               <img
-                className="image h-80 w-screen sm:h-128 object-cover"
+                className="image h-[330px] w-screen sm:h-128 object-cover"
                 src={image.url}
                 alt={`${index}`}
               />
