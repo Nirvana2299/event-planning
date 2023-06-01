@@ -44,7 +44,7 @@ export default function Planning() {
           <div>
             <Link to={image.to}>
               <div className='h-auto py-0.5 lg:pb-4 sm:h-80 object-filled transform transition ease-in-out bg-bisque-100 hover:opacity-60 transform transition duration-300 ease-in-out hover:bg-transparent duration-300' >
-                <img className='shadow-lg rounded-lg h-72 w-48 sm:h-80 md:w-auto object-cover' src={image.url} alt={index} />
+                <img className='shadow-lg rounded-lg h-72 w-auto sm:h-80 md:w-auto object-cover' src={image.url} alt={index} />
 
               </div>
             </Link>
