@@ -48,7 +48,7 @@ export default function ThemeParties() {
                 <div className="mx-auto grid max-w-2xl grid-cols-1 lg:gap-x-8 gap-y-4 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                 
                         <div className="col-span-2 lg:pr-10">
-                            <p className=" mt-6 text-xl text-center leading-8 text-bisque-700 sm:text-lg sm:text-left pb-4">
+                            <p className=" mt-6 text-xl text-justify leading-6 text-bisque-700 sm:text-lg sm:text-left pb-4">
                             Welcome to The Party Palace, your go-to destination for unforgettable theme parties! Immerse yourself in a world of enchantment, from roaring 20s soirées to futuristic cosmic adventures. With exquisite decor, tantalizing cuisine, and lively entertainment, our venue guarantees a night to remember. Book now and let us transform your party dreams into reality!
                             </p>
                             <img className='w-screen h-64 object-cover rounded-lg' src={image}/>
