@@ -43,7 +43,7 @@ export default function Planning() {
         {images.map((image, index) => (
           <div>
             <Link to={image.to}>
-              <div className='w-auto h-auto  py-0.5 lg:pb-4 sm:h-80 object-filled pr-2 pl-2 md:pr-6 md:pl-6 transform transition ease-in-out bg-bisque-100 group-hover:opacity-75 sm:h-64 transform transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-transparent duration-300' >
+              <div className='w-auto h-auto  py-0.5 lg:pb-4 sm:h-80 object-filled pr-2 pl-2 md:pr-6 md:pl-6 transform transition ease-in-out bg-bisque-100 hover:opacity-60 transform transition duration-300 ease-in-out hover:bg-transparent duration-300' >
                 <img className='shadow-lg rounded-lg h-44 w-44 sm:h-80 sm:w-80 object-cover' src={image.url} alt={index} />
 
               </div>
