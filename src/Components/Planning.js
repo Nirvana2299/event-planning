@@ -39,7 +39,7 @@ export default function Planning() {
         <p className="sm:text-4xl text-5xl text-bisque-900 subpixel-antialiased cursive font-bold">Services</p>
       </div>
 
-      <div className="lg:flex lg:flex-row lg:justify-center grid grid-cols-2 gap-2 mx-2 md:mx-auto sm:mx-auto md:grid-cols-3 lg:gird-cols-4 py-4 sm:py-16 sm:px-4">
+      <div className="lg:flex lg:flex-row lg:justify-center grid grid-cols-2 gap-1 sm:gap-2 px-2 md:mx-auto sm:mx-auto md:grid-cols-3 lg:gird-cols-4 py-4 sm:py-16 sm:px-4">
         {images.map((image, index) => (
           <div>
             <Link to={image.to}>
