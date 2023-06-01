@@ -188,10 +188,10 @@ export default function Portfolio() {
                             {selectedCallout.imageSrc.image.map((image, index) => (
                               <div
                                 key={index}
-                                className="flex-shrink-0 h-full w-full"
+                                className="flex-shrink-0"
                                 style={{ flexBasis: `${100 / selectedCallout.imageSrc.image.length}%`, }}
                               >
-                                <img src={image} alt={selectedCallout.imageAlt} className="object-cover object-center h-full w-full" />
+                                <img src={image} alt={index} className="object-cover object-center h-full w-full" />
                               </div>
                             ))}
                           </div>
