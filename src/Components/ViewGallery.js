@@ -13,14 +13,14 @@ export default function ViewGallery(props) {
     }
     return (
         <div>
-            <div className="flex justify-center pt-8 sm:pt-16 pb-6">
+            <div className="flex justify-center pt-8 pb-4 sm:py-12">
                 <p className="sm:text-4xl text-5xl text-bisque-900 subpixel-antialiased cursive font-bold">View Gallery</p>
             </div>
             <Line />
             <div className="bg-bisque-100">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="mx-auto max-w-7xl px-1 sm:px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl py-8 sm:py-10 lg:max-w-none">
-                        <div className="mt-6 mb-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+                        <div className="mt-6 mb-6 space-y-2 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
                             {props.images.map((image) => (
                                 <div key={image.name} className="group relative md:pb-4" onClick={() => switchOn(image)} >
                                     <div className="relative h-60 w-full overflow-hidden rounded-lg shadow-lg bg-bisque-100 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64 hover:shadow-xl transform transition duration-300 ease-in-out">
@@ -75,8 +75,8 @@ export default function ViewGallery(props) {
                                     leaveTo="opacity-0 translate-y-4 md:translate-y-0 md:scale-95"
                                 >
                                     {/* Popout Menu */}
-                                    <Dialog.Panel className="flex w-full transform text-left text-base transition md:my-8 md:max-w-2xl md:px-4 lg:max-w-4xl">
-                                        <div className="relative flex w-full items-center overflow-hidden backdrop-blur-xl bg-bisque-100 bg-opacity-80 sm:bg-opacity-100 px-4 pb-4 pt-4 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8 rounded-lg">
+                                    <Dialog.Panel className="flex w-full transform text-left text-base transition md:my-8 md:max-w-4xl md:px-4 lg:max-w-5xl">
+                                        <div className="relative flex w-full items-center overflow-hidden backdrop-blur-3xl bg-trasparent bg-opacity-0 px-1 pb-1 pt-1 shadow-2xl sm:px-6 sm:pt-8 md:p-1 lg:p-1 rounded-lg">
                                             <button
                                                 type="button"
                                                 className="absolute right-4 top-4 text-bisque-600 hover:text-bisque-900 sm:right-6 sm:top-8 md:right-6 md:top-6 lg:right-8 lg:top-8"
@@ -95,7 +95,6 @@ export default function ViewGallery(props) {
                                                     />
                                                 </div>
                                             </div>
-
                                         </div>
                                     </Dialog.Panel>
                                 </Transition.Child>
