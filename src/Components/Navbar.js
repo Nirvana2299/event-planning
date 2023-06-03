@@ -1,7 +1,7 @@
 import domino from './../image/domino-mask-svgrepo-com.svg'
 import logo from './../image/logo.jpg'
 import { Link } from 'react-router-dom'
-import { Fragment, useState } from 'react'
+import { Fragment, useState, useEffect } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
   CakeIcon,
@@ -38,10 +38,31 @@ function classNames(...classes) {
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true)
+
+  const handleScroll = () => {
+    const currentScrollPos = window.scrollY
+
+    if (currentScrollPos > prevScrollPos) {
+      setVisible(false)
+    } else {
+      setVisible(true)
+    }
+
+    setPrevScrollPos(currentScrollPos)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  },[])
+
 
   return (
-    <header className="bg-bisque backdrop-blur-xl bg-bisque-100/80 left-0 right-0 top-0">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 md:p-6 lg:px-2" aria-label="Global">
+    <header className={`z-10 bg-bisque backdrop-blur-xl bg-bisque-100/80 sticky left-0 right-0 top-0`} >
+      <nav className={`mx-auto flex max-w-7xl items-center justify-between p-4 md:p-6 lg:px-2`} aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             {/* <span className="cursive font-bold text-xl">Night Heaven</span> */}
