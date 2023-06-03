@@ -15,6 +15,8 @@ const imgURL4 =
 const imgURL5 =
   'https://images.unsplash.com/photo-1484156818044-c040038b0719?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80';
 
+const info = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+
 
 const callouts = [
   {
@@ -28,7 +30,7 @@ const callouts = [
   },
   {
     name: 'Fun activities and entertainment options',
-    description: 'Journals and note-taking',
+    description: info + info + info,
     imageSrc: {
       image: [imgURL4, imgURL5, imgURL4],
     },
@@ -37,7 +39,7 @@ const callouts = [
   },
   {
     name: 'Memorable anniversary themes and decorations',
-    description: 'Memorable anniversary themes and decorations.',
+    description: info + info,
     imageSrc: {
       image: [imgURL3, imgURL1, imgURL2],
     },
@@ -153,7 +155,7 @@ export default function Portfolio() {
           <div className="fixed inset-0 z-10 overflow-y-auto">
             <button
               type="button"
-              className="absolute right-4 top-4 text-bisque-100 hover:text-red-400 sm:right-6 sm:top-8 md:right-6 md:top-6 lg:right-8 lg:top-8"
+              className="fixed right-4 top-4 text-bisque-100 hover:text-red-400 sm:right-6 sm:top-8 md:right-10 md:top-6 lg:right-12 lg:top-8"
               onClick={() => setOpen(false)}
             >
               <span className="sr-only">Close</span>
