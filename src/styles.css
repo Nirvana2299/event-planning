@@ -10,11 +10,6 @@ body {
   font-family: 'Dancing Script', cursive;
 }
 
-header {
-  position: fixed;
-  z-index: 5;
-}
-
 .noSelect {
   -webkit-tap-highlight-color: transparent;
 }
