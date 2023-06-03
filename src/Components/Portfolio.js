@@ -94,10 +94,10 @@ export default function Portfolio() {
   return (
     <div id="portfolioSection">
       <div className="bg-bisque-100">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-8 sm:py-10 lg:max-w-none">
             <h2 className="text-3xl cursive font-bold text-bisque-900">Portfolio</h2>
-            <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+            <div className="mt-6 space-y-4 sm:space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
               {callouts.map((callout) => (
                 <div key={callout.name} className="group relative" onClick={() => switchOn(callout)} >
                   <div className="relative h-70 w-full overflow-hidden rounded-lg shadow-lg bg-bisque-100 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 sm:h-64 hover:shadow-xl group-hover:opacity-60 transform transition duration-300 ease-in-out">
@@ -124,7 +124,7 @@ export default function Portfolio() {
 
                     {/* <p className="text-base font-semibold text-bisque-900">{callout.description}</p> */}
                   </div>
-                  <h3 className="mt-4 text-base font-semibold text-bisque-900">
+                  <h3 className="mt-2 text-base font-semibold text-bisque-900">
                     <a>
                       <span className="absolute inset-0" />
                       {callout.name}
