@@ -69,7 +69,7 @@ export default function Carousel() {
   return (
     <div
       id="slideSection"
-      className="max-w-fit m-auto pt-24 sm:pt-[6.80rem] sm:pt-28 relative group left-0 right-0 overflow-hidden"
+      className="max-w-fit m-auto relative group left-0 right-0 overflow-hidden"
       {...handlers}
     >
       <div className="carousel">
@@ -84,12 +84,12 @@ export default function Carousel() {
             </div>
           ))}
         </div>
-        <div className="hidden md:group-hover:block absolute sm:top-[58%] top-[62%] -translate-x-0 translate-y-[-50%] rounded-full left-5 text-4xl sm:text-4xl md:text-6xl backdrop-blur bg-white-100/20 text-bisque-100 cursor-pointer">
+        <div className="hidden md:group-hover:block absolute sm:top-[50%] top-[50%] -translate-x-0 translate-y-[-50%] rounded-full left-5 text-4xl sm:text-4xl md:text-6xl backdrop-blur bg-white-100/20 text-bisque-100 cursor-pointer">
           <IoArrowBackCircleSharp
             onClick={previousImage}
           ></IoArrowBackCircleSharp>
         </div>
-        <div className="hidden md:group-hover:block absolute sm:top-[58%] top-[62%] -translate-x-0 translate-y-[-50%] rounded-full right-5 text-4xl sm:text-4xl md:text-6xl backdrop-blur bg-white-100/20 text-bisque-100 cursor-pointer">
+        <div className="hidden md:group-hover:block absolute sm:top-[50%] top-[50%] -translate-x-0 translate-y-[-50%] rounded-full right-5 text-4xl sm:text-4xl md:text-6xl backdrop-blur bg-white-100/20 text-bisque-100 cursor-pointer">
           <IoArrowForwardCircleSharp
             onClick={nextImage}
           ></IoArrowForwardCircleSharp>
