@@ -15,7 +15,7 @@ export default function AboutAndForm() {
               <p className="mt-6 text-xl text-justify leading-6 text-bisque-800 sm:text-2xl sm:text-left">
                  Tyohaar Event has provided full service event management, entertainment, promotion and association management services. Over the years, we have developed a sound reputation within our industry for creativity, efficiency, ability to meet deadlines and flawless execution of Tyohaar Event and for providing superior association services.
               </p>
-              <p className="mt-6 text-xl text-justify leading-8 text-bisque-800 sm:text-2xl sm:text-left">
+              <p className="mt-6 text-xl text-justify leading-6 text-bisque-800 sm:text-2xl sm:text-left">
                started with a purpose to provide ‘ONE STOP SOLUTIONS’ for all your Wedding- related worries. customer or staff,  Tyohaar Event assures to handle every part of it with finesse. We step in right at the stage of Idea Generation to its flawless execution. Here, you’ll find a platform that will be unique to you and your brand – a platform that will define your success. Current success stories at “ Tyohaar Event”
               </p>
             </div>
