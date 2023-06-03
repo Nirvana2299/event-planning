@@ -98,8 +98,8 @@ export default function Portfolio() {
             <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
               {callouts.map((callout) => (
                 <div key={callout.name} className="group relative" onClick={() => switchOn(callout)} >
-                  <div className="relative h-60 w-full overflow-hidden rounded-lg shadow-lg bg-bisque-100 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 sm:h-64 hover:shadow-xl group-hover:opacity-60 transform transition duration-300 ease-in-out">
-                    <div   
+                  <div className="relative h-70 w-full overflow-hidden rounded-lg shadow-lg bg-bisque-100 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 sm:h-64 hover:shadow-xl group-hover:opacity-60 transform transition duration-300 ease-in-out">
+                    <div
                       className="flex"
                       style={{
                         transform: `translateX(-${currentIndex * (100 / callout.imageSrc.image.length)}%)`,
@@ -112,10 +112,10 @@ export default function Portfolio() {
                       {callout.imageSrc.image.map((image, imageIndex) => (
                         <div
                           key={imageIndex}
-                          className="flex-shrink-0 h-full w-full object-cover object-center"
+                          className="flex-shrink-0 h-full w-full object-cover"
                           style={{ flexBasis: `${100 / callout.imageSrc.image.length}%` }}
                         >
-                          <img src={image} alt={callout.imageAlt} className="object-cover object-center h-full w-full" />
+                          <img src={image} alt={callout.imageAlt} className="object-cover h-full w-full" />
                         </div>
                       ))}
                     </div>
@@ -151,6 +151,14 @@ export default function Portfolio() {
           </Transition.Child>
 
           <div className="fixed inset-0 z-10 overflow-y-auto">
+            <button
+              type="button"
+              className="absolute right-4 top-4 text-bisque-100 hover:text-red-400 sm:right-6 sm:top-8 md:right-6 md:top-6 lg:right-8 lg:top-8"
+              onClick={() => setOpen(false)}
+            >
+              <span className="sr-only">Close</span>
+              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+            </button>
             <div className="flex min-h-full items-stretch justify-center text-center md:items-center md:px-2 lg:px-4" {...handlers}>
               {selectedCallout && (
                 <Transition.Child
@@ -163,19 +171,19 @@ export default function Portfolio() {
                   leaveTo="opacity-0 translate-y-4 md:translate-y-0 md:scale-95"
                 >
                   {/* Popout Menu */}
-                  <Dialog.Panel className="flex w-full transform text-left text-base transition md:my-8 md:max-w-2xl md:px-4 lg:max-w-4xl">
-                    <div className="relative flex w-full items-center overflow-hidden backdrop-blur bg-bisque-100/90 px-4 pb-8 pt-14 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8 rounded-lg">
+                  <Dialog.Panel className="flex w-full transform text-left text-base transition md:my-8 md:max-w-xl md:px-4 lg:max-w-6xl">
+                    <div className="relative flex w-full items-center overflow-hidden backdrop-blur bg-bisque-100/90 px-2 pb-4 pt-14 shadow-2xl sm:px-4 sm:pt-8 md:p-4 lg:p-8 rounded-lg">
                       <button
                         type="button"
-                        className="absolute right-4 top-4 text-bisque-600 hover:text-bisque-900 sm:right-6 sm:top-8 md:right-6 md:top-6 lg:right-8 lg:top-8"
+                        className="sm:hidden absolute right-4 top-4 text-bisque-600 hover:text-bisque-900 sm:right-6 sm:top-8 md:right-6 md:top-6 lg:right-2 lg:top-2"
                         onClick={() => setOpen(false)}
                       >
                         <span className="sr-only">Close</span>
                         <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                       </button>
 
-                      <div className="grid w-full grid-cols-1 items-start gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
-                        <div className="aspect-w-3 aspect-h-4 sm:aspect-h-6 rounded-lg overflow-hidden sm:col-span-2 lg:col-span-1">
+                      <div className="grid w-full grid-cols-1 items-start gap-x-2 sm:gap-x-0 gap-y-4 lg:grid-cols-1">
+                        <div className="aspect-w-3 aspect-h-2 lg:aspect-h-3 lg:aspect-w-7 md:aspect-h-2 md:aspect-w-3 rounded-lg overflow-hidden sm:col-span-2 lg:col-span-1">
                           <div
                             className="flex"
                             style={{
@@ -191,7 +199,7 @@ export default function Portfolio() {
                                 className="flex-shrink-0"
                                 style={{ flexBasis: `${100 / selectedCallout.imageSrc.image.length}%`, }}
                               >
-                                <img src={image} alt={index} className="object-cover object-center h-full w-full" />
+                                <img src={image} alt={index} className="object-cover md:min-h-full h-full w-full" />
                               </div>
                             ))}
                           </div>
@@ -209,7 +217,7 @@ export default function Portfolio() {
                           </div> */}
                         </div>
                         <div className="sm:col-span-2 lg:col-span-2">
-                          <h3 className="text-lg leading-6 font-medium text-bisque-900">{selectedCallout.name}</h3>
+                          <h3 className="text-lg text-center sm:text-left leading-6 font-medium text-bisque-900">{selectedCallout.name}</h3>
                           <p className="mt-4 text-sm text-bisque-900 text-justify">{selectedCallout.description}</p>
                         </div>
                       </div>
