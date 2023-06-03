@@ -38,30 +38,37 @@ function classNames(...classes) {
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [visible, setVisible] = useState(true)
+  // const [show, setShow] = useState(true);
+  // const [lastScrollY, setLastScrollY] = useState(0);
 
-  const handleScroll = () => {
-    const currentScrollPos = window.scrollY
+  // const controlNavbar = () => {
+  //   if (typeof window !== 'undefined') {
+  //     if (window.scrollY < lastScrollY) { // if scroll down hide the navbar
+  //       setShow(false);
+  //     } else { // if scroll up show the navbar
+  //       setShow(true);
+  //     }
 
-    if (currentScrollPos > prevScrollPos) {
-      setVisible(false)
-    } else {
-      setVisible(true)
-    }
+  //     // remember current page location to use in the next move
+  //     setLastScrollY(window.scrollY);
+  //   }
+  // };
 
-    setPrevScrollPos(currentScrollPos)
-  }
+  // useEffect(() => {
+  //   if (typeof window !== 'undefined') {
+  //     window.addEventListener('scroll', controlNavbar);
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => window.removeEventListener('scroll', handleScroll)
-  },[])
+  //     // cleanup function
+  //     return () => {
+  //       window.removeEventListener('scroll', controlNavbar);
+  //     };
+  //   }
+  // }, [lastScrollY]);
+  
 
 
   return (
-    <header className={`z-10 bg-bisque backdrop-blur-xl bg-bisque-100/80 sticky left-0 right-0 top-0`} >
+    <header className={`z-10 bg-bisque backdrop-blur-xl bg-bisque-100/60 lg:bg-bisque-100/80 sticky left-0 right-0 top-0`} >
       <nav className={`mx-auto flex max-w-7xl items-center justify-between p-4 md:p-6 lg:px-2`} aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
