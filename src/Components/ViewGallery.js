@@ -76,7 +76,7 @@ export default function ViewGallery(props) {
                                 >
                                     {/* Popout Menu */}
                                     <Dialog.Panel className="flex w-full transform text-left text-base transition md:my-8 md:max-w-4xl md:px-4 lg:max-w-5xl">
-                                        <div className="relative flex w-full items-center overflow-hidden backdrop-blur-3xl bg-bisque-100 bg-opacity-60 sm:bg-opacity-0 px-1 pb-1 pt-1 shadow-2xl sm:px-6 sm:pt-8 md:p-1 lg:p-1 rounded-lg">
+                                        <div className="relative flex w-full items-center overflow-hidden backdrop-blur-xl bg-bisque-100 bg-opacity-40 sm:bg-opacity-0 px-1 pb-1 pt-1 shadow-2xl sm:px-6 sm:pt-8 md:p-1 lg:p-1 rounded-lg">
                                             <button
                                                 type="button"
                                                 className="absolute right-4 top-4 text-bisque-600 hover:text-bisque-900 sm:right-6 sm:top-8 md:right-6 md:top-6 lg:right-8 lg:top-8"
@@ -87,11 +87,11 @@ export default function ViewGallery(props) {
                                             </button>
 
                                             <div className="grid w-full grid-cols-1 items-start gap-x-6 gap-y-8">
-                                                <div className="aspect-w-3 aspect-h-5 sm:aspect-w-4 lg:aspect-h-6 lg:aspect-w-9 sm:aspect-h-3 rounded-lg overflow-hidden sm:col-span-2 lg:col-span-1">
+                                                <div className="rotate-0 sm:rotate-0 aspect-video sm:aspect-w-4 lg:aspect-h-6 lg:aspect-w-9 sm:aspect-h-3 rounded-lg overflow-hidden sm:col-span-2 lg:col-span-1">
                                                     <img
                                                         src={selectedCallout && selectedCallout.url}
                                                         alt={selectedCallout && selectedCallout.name}
-                                                        className="object-cover object-center"
+                                                        className="object-cover"
                                                     />
                                                 </div>
                                             </div>
