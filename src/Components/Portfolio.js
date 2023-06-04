@@ -68,7 +68,7 @@ export default function Portfolio() {
   function switchOn(callout) {
     setOpen(true);
     setSelectedCallout(callout);
-    // setCurrentIndex(0);
+    setCurrentIndex(0);
   }
 
   const nextImage = () => {
@@ -191,32 +191,20 @@ export default function Portfolio() {
                             style={{
                               transform: `translateX(-${currentIndex * (100 / selectedCallout.imageSrc.image.length)}%)`,
                               transition: 'transform 0.8s ease-in-out',
-                              display: 'flex',
-                              width: `${selectedCallout.imageSrc.image.length * 100}%`,
+                              // display: 'flex',
+                              // width: `${selectedCallout.imageSrc.image.length * 100}%`,
                             }}
                           >
                             {selectedCallout.imageSrc.image.map((image, index) => (
                               <div
                                 key={index}
                                 className="flex-shrink-0"
-                                style={{ flexBasis: `${100 / selectedCallout.imageSrc.image.length}%`, }}
+                                style={{ flexBasis: `${100 / selectedCallout.imageSrc.image.length}%` }}
                               >
                                 <img src={image} alt={index} className="object-cover md:min-h-full h-full w-full" />
                               </div>
                             ))}
                           </div>
-                          {/* <div className="hidden flex justify-center mt-6">
-                            {selectedCallout.imageSrc.image.map((_, buttonIndex) => (
-                              <button
-                                key={buttonIndex}
-                                className={classNames(
-                                  buttonIndex === currentIndex ? 'bg-bisque-800' : 'bg-bisque-100',
-                                  'w-2 h-2 mx-1 rounded-full'
-                                )}
-                                onClick={() => handleImageChange(buttonIndex)}
-                              />
-                            ))}
-                          </div> */}
                         </div>
                         <div className="sm:col-span-2 lg:col-span-2">
                           <h3 className="text-lg text-center sm:text-left leading-6 font-medium text-bisque-900">{selectedCallout.name}</h3>
