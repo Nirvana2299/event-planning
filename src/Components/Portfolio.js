@@ -191,8 +191,8 @@ export default function Portfolio() {
                             style={{
                               transform: `translateX(-${currentIndex * (100 / selectedCallout.imageSrc.image.length)}%)`,
                               transition: 'transform 0.8s ease-in-out',
-                              // display: 'flex',
-                              // width: `${selectedCallout.imageSrc.image.length * 100}%`,
+                              display: 'flex',
+                              width: `${selectedCallout.imageSrc.image.length * 100}%`,
                             }}
                           >
                             {selectedCallout.imageSrc.image.map((image, index) => (
