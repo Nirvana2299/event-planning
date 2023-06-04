@@ -177,10 +177,10 @@ export default function Portfolio() {
                     <div className="relative flex w-full items-center overflow-hidden backdrop-blur bg-bisque-100/90 px-2 pb-4 pt-14 shadow-2xl sm:px-4 sm:pt-8 md:p-4 lg:p-8 rounded-lg">
                       <button
                         type="button"
-                        className="sm:hidden absolute right-4 top-4 text-bisque-600 sm:right-6 sm:top-8 md:right-6 md:top-6 lg:right-2 lg:top-2"
+                        className="sm:hidden absolute right-4 top-4 text-bisque-600"
                         onClick={() => setOpen(false)}
                       >
-                        <span className="sr-only">Close</span>
+                        {/* <span className="sr-only">Close</span> */}
                         <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                       </button>
 
