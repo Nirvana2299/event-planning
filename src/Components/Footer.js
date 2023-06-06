@@ -33,11 +33,15 @@ export default function Footer() {
                     <p className='text-bisque-100 text-center'>Copyright © Tyohaar Events</p>
                 </div> */}
             </div>
-            <div className="flex justify-items-center bg-black align-center py-2 border-dashed border-2 border-gentlecare-100" >
-                    <h3 className="cursive text-center text-md sm:text-xl bg-gradient-to-r from-blue-600 via-rose-400 to-indigo-400 inline-block text-transparent bg-clip-text font-bold mx-auto">
+            <div class="mx-auto flex items-center justify-center">
+                <div class="h-12 w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-0.5">
+            <div className="flex justify-items-center bg-black align-center pt-2 h-full w-full" >
+                    <h3 className="cursive text-center text-xl sm:text-xl bg-gradient-to-r from-blue-600 via-rose-400 to-indigo-400 inline-block text-transparent bg-clip-text font-bold mx-auto">
                     Made with ❤️ by <a href='https://www.linkedin.com/in/shoaibmoosa/'>Shoaib</a>
                     </h3>
                 </div>
+                </div>
+            </div>
         </footer>
     )
 } 
