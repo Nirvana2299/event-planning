@@ -29,15 +29,15 @@ export default function Footer() {
 
 
                 </div>
-                <div className='bg-black align-center py-2'>
+                {/* <div className='bg-black align-center py-2'>
                     <p className='text-bisque-100 text-center'>Copyright © Tyohaar Events</p>
-                </div>
-            </div>
-            {/* <div className="flex justify-items-center bg-black align-center py-2 border-dashed border-2 border-gentlecare-100" >
-                    <h3 className="cursive text-center text-md sm:text-xl bg-gradient-to-r from-blue-600 via-rose-400 to-indigo-400 inline-block text-transparent bg-clip-text font-bold mx-auto">
-                        Made with ❤️ by Shoaib
-                    </h3>
                 </div> */}
+            </div>
+            <div className="flex justify-items-center bg-black align-center py-2 border-dashed border-2 border-gentlecare-100" >
+                    <h3 className="cursive text-center text-md sm:text-xl bg-gradient-to-r from-blue-600 via-rose-400 to-indigo-400 inline-block text-transparent bg-clip-text font-bold mx-auto">
+                    Made with ❤️ by <a href='https://www.linkedin.com/in/shoaibmoosa/'>Shoaib</a>
+                    </h3>
+                </div>
         </footer>
     )
 } 
