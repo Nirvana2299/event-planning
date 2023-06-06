@@ -155,7 +155,7 @@ export default function Portfolio() {
           <div className="fixed inset-0 z-10 overflow-y-auto">
             <button
               type="button"
-              className="fixed right-4 top-4 text-bisque-100 hover:text-red-400 sm:right-6 sm:top-8 md:right-10 md:top-6 lg:right-12 lg:top-8"
+              className="hidden sm:block fixed right-4 top-4 text-bisque-100 hover:text-red-400 sm:right-6 sm:top-8 md:right-10 md:top-6 lg:right-12 lg:top-8"
               onClick={() => setOpen(false)}
             >
               <span className="sr-only">Close</span>
