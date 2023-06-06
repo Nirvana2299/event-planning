@@ -73,7 +73,7 @@ export default function Navbar() {
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             {/* <span className="cursive font-bold text-xl">Night Heaven</span> */}
-            <img className="h-8 w-auto text-bisque-600" src={domino} alt="" />
+            <img className="h-12 w-auto text-bisque-600" src={domino} alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">
