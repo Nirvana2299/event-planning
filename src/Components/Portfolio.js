@@ -96,7 +96,7 @@ export default function Portfolio() {
       <div className="bg-bisque-100">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-8 sm:py-10 lg:max-w-none">
-            <h2 className="text-3xl cursive font-bold text-bisque-900">Portfolio</h2>
+            <h2 className="text-3xl sm:text-6xl cursive font-bold text-bisque-900">Portfolio</h2>
             <div className="mt-6 space-y-4 sm:space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
               {callouts.map((callout) => (
                 <div key={callout.name} className="group relative" onClick={() => switchOn(callout)} >
