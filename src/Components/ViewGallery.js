@@ -23,9 +23,10 @@ export default function ViewGallery(props) {
                         <div className="mt-6 mb-6 space-y-2 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
                             {props.images.map((image) => (
                                 <div key={image.name} className="group relative md:pb-4" onClick={() => switchOn(image)} >
-                                    <div className="relative h-60 w-full overflow-hidden rounded-lg shadow-lg bg-bisque-100 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64 hover:shadow-xl transform transition duration-300 ease-in-out">
+                                    <div className="blur-load relative h-60 w-full overflow-hidden rounded-lg shadow-lg bg-bisque-100 sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64 hover:shadow-xl transform transition duration-300 ease-in-out">
                                         {/* image array, Loops through all the image provided in the callouts variable */}
                                         <img
+                                            loading='lazy'
                                             src={image.url}
                                             alt={image.name}
                                             className="h-full w-full object-cover object-center"
